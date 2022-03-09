@@ -1,0 +1,36 @@
+.footer {
+  background-color: #13167f;
+}
+
+.footer_content {
+  width: 800px;
+}
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid_item {
+  padding: 10px;
+  color: #ffffffcf;
+  font-size: 16px;
+}
+
+.font {
+  color: #ffffff6f;
+  font-size: 14px !important;
+}
+
+.logo {
+  width: 100px;
+  object-fit: contain;
+  height: 40px;
+}
+.background {
+  width: 100%;
+  aspect-ratio: 16 / 5;
+}
+
+.copyright {
+  border-top: 1px solid #333;
+}
