@@ -1,17 +1,17 @@
 import React from 'react'
-import styles from '../../../styles/Footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Image from 'next/image'
 import img from '../../../public/logo.png'
+import styles from '../../../src/components/Footer/footer.module.css'
 
 export default function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.background_image}>
-                <div className={"container-fluid"}>
-                    <div className={"row"}>
-                        <div className={"col-lg-6"}>
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-lg-6">
                             <div className={styles.context}>
                                 <span className={styles.fontWhite}>Building your</span>
                                 <span className={styles.fontGreen}> Branded eCommerce Experience</span>
@@ -22,7 +22,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className={"flex justify-content-between container mt-5"}>
+            <div className="flex justify-content-between container mt-5">
                 <div>
                     <Image alt='logo' className={styles.logo} src={img} width="100" height="40" />
                 </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className={styles.copyright}>
-                <div className={"flex justify-content-between container p-2"}>
+                <div className="flex justify-content-between container p-2">
                     <div className={styles.font}>
                         Copyright@120213 Hello
                     </div>

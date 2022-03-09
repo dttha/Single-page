@@ -1,10 +1,10 @@
-import Link from 'next/link'
 import React, { useEffect } from 'react'
-import styles from '../../../styles/Header.module.css'
+import Link from 'next/link'
 import Image from 'next/image'
-import img from '../../../public/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import img from '../../../public/logo.png'
+import styles from '../../components/Header/header.module.css'
 
 export default function Header() {
     useEffect(() => {
@@ -16,7 +16,7 @@ export default function Header() {
     }, [])
     return (
         <div className={styles.header}>
-            <div className={"container flex justify-content-between align-items-center "}>
+            <div className="container flex justify-content-between align-items-center">
                 <div className='flex'>
                     <button id="btn-menu" className={styles.btn_menu}>
                         <FontAwesomeIcon className={styles.font_icon} icon={faBars} style={{ fontSize: 20 }} />
