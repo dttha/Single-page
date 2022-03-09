@@ -2,16 +2,29 @@ import React from 'react'
 import styles from '../../../styles/Footer.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
+import img from '../../../public/download.png'
 
 export default function Footer() {
     return (
         <div className={styles.footer}>
-            <div>
-                <img className={styles.background} src='/download.png' width={'100%'} height={'100%'} />
+            <div className={styles.background_image}>
+                <div className={"container-fluid"}>
+                    <div className={"row"}>
+                        <div className={"col-lg-6"}>
+                            <div className={styles.context}>
+                                <span className={styles.fontWhite}>Building your</span> 
+                                <span className={styles.fontGreen}> Branded eCommerce Experience</span> 
+                                <span className={styles.fontWhite}> today with Xopify!</span>
+                            </div>
+                                <div className= {"button " + styles.button_footer } >Get started</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className={"flex justify-content-between container mt-5"}>
                 <div>
-                    <img className={styles.logo} src='/download.png' width={'100%'} />
+                    <Image alt='logo' className={styles.logo} src={img} width={'100%'} />
                 </div>
                 <div className={styles.footer_content}>
                     <div className={styles.grid_container}>

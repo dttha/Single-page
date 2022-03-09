@@ -11,13 +11,71 @@
   cursor: pointer;
   object-fit: contain;
 }
-
 .menu {
   list-style: none;
+  transition: 0s;
 }
 
 .menu li {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 15px;
   padding: 12px;
-  cursor: pointer;
+  color: #13167f;
   font-weight: 700;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu li .active,
+.menu li :hover {
+  color: #575bda;
+}
+
+.button_header {
+  display: block;
+}
+
+.btn_menu {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .btn_menu {
+    display: block;
+    background: transparent;
+    border: none;
+    color: #50f2ba;
+    font-size: 30px;
+  }
+  .menu {
+    display: none;
+  }
+
+  .show_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #50f2ba;
+    margin: 0;
+    transition: 0.5s;
+    top: 80px;
+    width: 40vw;
+    height: 30vh;
+  }
+}
+@media (max-width: 576px) {
+  .show_menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: #50f2ba;
+    margin: 0;
+    transition: 0.5s;
+    top: 80px;
+    width: 100vw;
+    height: 30vh;
+  }
 }
