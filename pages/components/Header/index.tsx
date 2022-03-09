@@ -8,9 +8,9 @@ import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     useEffect(() => {
-        const btnMenu = document.getElementById("btn-menu")
+        const btnMenu = document.getElementById("btn-menu") as HTMLElement;
         const menu = document.getElementById("menu")
-        btnMenu?.addEventListener("click", () => {
+        btnMenu.addEventListener("click", () => {
             menu?.classList.toggle(styles["show_menu"])
         })
     }, [])
