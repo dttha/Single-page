@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import img from '../../../public/logo.png'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import img from '../../../public/Group 18 Copy.png'
+import btnmenu from '../../../public/btnmenu.png'
 import styles from '../../components/Header/header.module.css'
 
 export default function Header() {
@@ -17,23 +18,25 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <div className="container flex justify-content-between align-items-center">
-                <div className='flex'>
-                    <button id="btn-menu" className={styles.btn_menu}>
-                        <FontAwesomeIcon className={styles.font_icon} icon={faBars} style={{ fontSize: 20 }} />
-                    </button>
-                    <Image className={styles.logo} src={img} alt="logo" width="100" height="40" />
+                <div className="flex">
+                    <Image className={styles.logo} src={img} alt="logo" width="160" height="47" />
                 </div>
-                <ul className={'flex ' + styles.menu} id="menu">
+                <button id="btn-menu" className={styles.btn_menu}>
+                    <Image className={styles.font_icon} src={btnmenu} alt="btnmenu" width="24" height="18" />
+                </button>
+                <ul className={"flex " + styles.menu} id="menu">
                     <div className={styles.dropdown}>
                         <li className={styles.dropbtn + " " + styles.menu_item}>
-                            <Link href=''>Product</Link>
-                            &nbsp;
-                            <FontAwesomeIcon className={styles.font_icon} icon={faChevronDown} />
-                            <ul className={styles.dropdown_content}>
+                            <div>
+                                <Link href=''>Product</Link>
+                                &nbsp;
+                                <FontAwesomeIcon className={styles.font_icon} icon={faChevronDown} />
+                            </div>
+                            {/* <ul className={styles.dropdown_content}>
                                 <li className={styles.dropdown_item}><Link href="#">A</Link></li>
                                 <li className={styles.dropdown_item}><Link href="#">B</Link></li>
                                 <li className={styles.dropdown_item}><Link href="#">C</Link></li>
-                            </ul>
+                            </ul> */}
                         </li>
                     </div>
                     <li className={styles.menu_item}>
@@ -44,11 +47,11 @@ export default function Header() {
                             <Link href=''>Blog</Link>
                             &nbsp;
                             <FontAwesomeIcon className={styles.font_icon} icon={faChevronDown} />
-                            <ul className={styles.dropdown_content}>
+                            {/* <ul className={styles.dropdown_content}>
                                 <li className={styles.dropdown_item}><Link href="#">A</Link></li>
                                 <li className={styles.dropdown_item}><Link href="#">B</Link></li>
                                 <li className={styles.dropdown_item}><Link href="#">C</Link></li>
-                            </ul>
+                            </ul> */}
                         </li>
                     </div>
                     <li className={styles.menu_item}>
@@ -58,7 +61,9 @@ export default function Header() {
                         <Link href=''>Contact</Link>
                     </li>
                 </ul>
-                <div className={"button " + styles.button_header}>Get started</div>
+                <div className={"button " + styles.hidden}>
+                    <div className="content_btn">Get started</div>
+                </div>
             </div>
             <div>
             </div>

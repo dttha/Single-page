@@ -1,24 +1,35 @@
 .footer {
-  background-color: #13167f;
+  background-color: #13157f;
 }
 
 .footer_content {
-  width: 800px;
+  margin-top: 20px;
+  margin-left: 700px;
+  max-width: 576px;
 }
 .grid_container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 200px 200px 200px;
+  max-width: 570x;
 }
 
 .grid_item {
-  padding: 10px;
-  color: #ffffffcf;
-  font-size: 16px;
+  font-family: "Harmonia Sans Pro Cyr Semi Bold";
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  line-height: 20px;
+  opacity: 0.9;
 }
 
 .font {
-  color: #ffffff6f;
+  color: #ffffff;
+  opacity: 0.5 !important;
   font-size: 14px !important;
+  letter-spacing: 0.5px;
+  line-height: 17px !important;
+  font-weight: 600;
+  font-family: "Harmonia Sans Pro Cyr Semi Bold";
 }
 
 .logo {
@@ -31,77 +42,144 @@
   aspect-ratio: 16 / 5;
 }
 
-.copyright {
-  border-top: 1px solid #333;
+.font_copyright {
+  font-family: "Harmonia Sans Pro Cyr Semi Bold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #5b5d9b;
 }
+
+.copyright {
+  border-top: 2px solid #000273;
+  margin-top: 70px;
+}
+
 .background_image {
-  background-position: 50%;
-  background-image: linear-gradient(
-      90deg,
-      rgb(20, 28, 138) 400px,
-      rgba(0, 0, 0, 0.4) 59%
-    ),
-    url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces//5P8SmMzSNYikXpxil6BYzJ16611.jpg);
+  object-fit: cover;
+  background-image: url("../../../public/banner\ 4_3.png");
 }
 
 .fontWhite {
   color: #fff;
-  font-weight: 500;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: "Harmonia Sans Pro Cyr Bold";
 }
 
 .fontGreen {
-  color: #50f2ba;
-  font-weight: 500;
-  font-size: 26px;
+  color: #15bcaf;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: "Harmonia Sans Pro Cyr Bold";
 }
 .context {
-  font-family: Roboto, sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 47px;
-  margin: 0 0 0 150px;
-  max-width: 300px;
-  padding: 0 0 30px;
+  margin-bottom: 20px;
 }
+
+.description {
+  font-family: "Avenir Next Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
 .button_footer {
   margin: 0 0 0 150px;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
+.wrap_footer {
+  margin-left: 86px;
+  margin-top: 70px;
 }
-@media (max-width: 992px) {
+
+@media (max-width: 375px) {
+  .logo {
+    width: 120px !important;
+    height: 35px !important;
+  }
+  .wrap_footer {
+    margin-left: 33px;
+    margin-top: 55px;
+  }
+  .footer_content {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    max-width: 350px;
+  }
+  .grid_item {
+    font-family: "Harmonia Sans Pro Cyr Semi Bold";
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    line-height: 18px;
+    opacity: 0.9;
+  }
+  .font {
+    color: #ffffff;
+    opacity: 0.5 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px;
+    line-height: 15.6px !important;
+    font-weight: 600;
+    font-family: "Harmonia Sans Pro Cyr Semi Bold";
+  }
   .background_image {
-    background-position: 50%;
-    background-image: linear-gradient(
-        90deg,
-        rgb(20, 28, 138) 200px,
-        rgba(0, 0, 0, 0.4) 59%
-      ),
-      url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces//5P8SmMzSNYikXpxil6BYzJ16611.jpg);
+    object-fit: cover;
+    background-image: url("../../../public/banner\ 4_4.png");
   }
-  .context {
-    margin: 0 0 0 50px;
-  }
-  .button_footer {
-    margin: 0 0 0 50px;
+  .footer {
+    width: 689px;
+    height: 618px;
+    left: -170px;
+    top: 7160px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
+  .fontWhite {
+    font-weight: 380;
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .fontGreen {
+    font-weight: 380;
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .fontWhite {
+    font-weight: 350;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .fontGreen {
+    font-weight: 350;
+    font-size: 40px;
+    line-height: 45px;
+  }
   .background_image {
-    background-position: 50%;
-    background-image: linear-gradient(
-        90deg,
-        rgb(20, 28, 138) 100px,
-        rgba(0, 0, 0, 0.4) 59%
-      ),
-      url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces//5P8SmMzSNYikXpxil6BYzJ16611.jpg);
+    object-fit: cover;
+    background-image: url("../../../public/banner\ 4_3.png");
+  }
+}
+
+/* @media (max-width: 576px) {
+  .background_image {
+    object-fit: contain;
+    background-image: url("../../../public/banner\ 4_3.png");
   }
   .context {
     margin: 0 0 0 30px;
@@ -109,4 +187,4 @@
   .button_footer {
     margin: 0 0 0 30px;
   }
-}
+} */
