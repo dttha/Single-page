@@ -3,14 +3,15 @@ import Image from 'next/image'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import line from '../../../public/line 4_1.png'
+import banner from '../../../public/iStock_627198666.png'
 import styles from '../Content/content.module.css'
 
 export default function Content() {
     return (
         <div className={styles.content}>
             <div className={styles.wrap_content}>
-                <div className="row">
-                    <div className="col-lg-6">
+                <div className={styles.wrap_row}>
+                    <div>
                         <div className={styles.context}>
                             <span className={styles.fontWhite}>Create</span>
                             <span className={styles.fontGreen}> Branded</span>
@@ -28,6 +29,7 @@ export default function Content() {
                 </div>
             </div>
             <Image alt='line' className={styles.line} src={line} width="2327" height="725.05" />
+            <Image alt='banner' className={styles.banner} src={banner} width="2195" height="1463" />
         </div>
     )
 }

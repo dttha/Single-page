@@ -10,7 +10,7 @@ export default function Footer() {
     return (
         <div className={styles.footer}>
             <div className={styles.background_image}>
-                <div className="container-fluid">
+                <div className={styles.wrap_content_footer}>
                     <div className="row">
                         <div className="col-lg-6">
                             <div className={styles.context}>

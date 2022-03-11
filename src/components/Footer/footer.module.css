@@ -58,6 +58,8 @@
 .background_image {
   object-fit: cover;
   background-image: url("../../../public/banner\ 4_3.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .fontWhite {
@@ -96,6 +98,18 @@
 .wrap_footer {
   margin-left: 86px;
   margin-top: 70px;
+}
+
+.wrap_content_footer {
+  padding-top: 190px;
+  /* cach thu nho theo width man hinh
+  nhung no se khong chinh xac dc px 
+  thi dung 1 cai media xong tinh theo cai nay la dc vw la view width
+  100vw = man hinh tuong tu voi vh*/
+  padding-left: 235px;
+  max-width: 100%;
+  width: calc(624px + 250px);
+  padding-bottom: 400px;
 }
 
 @media (max-width: 375px) {
@@ -145,6 +159,14 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .footer_content {
+    margin-top: 20px;
+    margin-left: 400px;
+    max-width: 576px;
+  }
+}
+
 @media (max-width: 1200px) {
   .fontWhite {
     font-weight: 380;
@@ -157,6 +179,15 @@
     font-size: 45px;
     line-height: 50px;
   }
+  .wrap_content_footer {
+    padding-left: calc(10px + 10%);
+  }
+
+  .footer_content {
+    margin-top: 20px;
+    margin-left: 300px;
+    max-width: 576px;
+  }
 }
 @media (max-width: 992px) {
   .fontWhite {
@@ -164,7 +195,11 @@
     font-size: 40px;
     line-height: 45px;
   }
-
+  .footer_content {
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 576px;
+  }
   .fontGreen {
     font-weight: 350;
     font-size: 40px;
@@ -173,6 +208,9 @@
   .background_image {
     object-fit: cover;
     background-image: url("../../../public/banner\ 4_3.png");
+  }
+  .wrap_content_footer {
+    padding-left: calc(10px + 10%);
   }
 }
 
