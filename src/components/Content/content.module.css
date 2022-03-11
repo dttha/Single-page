@@ -1,0 +1,57 @@
+.content {
+  background-color: #13157f;
+}
+.fontWhite {
+  color: #fff;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: "Harmonia Sans Pro Cyr Bold";
+}
+
+.fontGreen {
+  color: #15bcaf;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 56px;
+  font-family: "Harmonia Sans Pro Cyr Bold";
+}
+
+.context {
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Avenir Next Medium";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+
+.select_btn {
+  color: #ffffff;
+  font-family: "Harmonia Sans Pro Cyr Semi Bold";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.font_icon {
+  color: #ffffff;
+  margin-top: 7px;
+}
+
+.wrap_content {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 100px 900px 0 232px;
+  z-index: 90;
+}
+
+.line {
+  top: -10px !important;
+  z-index: 80;
+}

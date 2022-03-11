@@ -104,9 +104,6 @@ a {
   flex-wrap: wrap;
 }
 
-.col-lg-6 {
-}
-
 @media (max-width: 375px) {
   .container {
     max-width: 100%;
