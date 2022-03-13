@@ -1,56 +1,11 @@
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import Link from 'next/link'
 import React, { useState } from 'react'
 import img from '../../../public/Group 18 Copy.png'
 import styles from '../../components/Header/header.module.css'
+import { MENU } from '../../constants'
 import Button from '../Button'
-import NavItem, { INavItem } from '../NavItem'
+import NavItem from '../NavItem'
 
-
-const menu: INavItem[] = [
-  {
-    title: 'Product',
-    href: '/product',
-    subMenu: [
-      {
-        title: 'Shooes',
-        href: '/product/1'
-      },
-      {
-        title: 'Theme gallery',
-        href: '/product/2'
-      },
-      {
-        title: 'Blog',
-        href: '/product/3'
-      }
-    ]
-  },
-  {
-    title: 'Theme gallery',
-    href: '/theme-gallery'
-  },
-  {
-    title: 'Blog',
-    href: '/blog',
-    subMenu: [
-      {
-        title: 'Blog 1',
-        href: '/blog/1'
-      },
-    ]
-  },
-  {
-    title: 'About us',
-    href: '/about-us'
-  },
-  {
-    title: 'Contact',
-    href: '/contact'
-  }
-]
 
 export default function Header() {
   const [checked, setChecked] = useState<boolean>(false)
@@ -73,7 +28,7 @@ export default function Header() {
         </div>
 
         <ul className={`flex ${styles.menu}  ${checked ? styles.showMenu : ''}`} id="menu">
-          {menu.map((item) => {
+          {MENU.map((item) => {
             return <NavItem
               key={item.href}
               title={item.title}

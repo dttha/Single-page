@@ -3,13 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import React from 'react'
 import styles from '../../components/Header/header.module.css'
-
-export interface INavItem {
-  title: string;
-  href: string;
-  subMenu?: INavItem[];
-  className?: string;
-}
+import { INavItem } from '../../model';
 
 export default function NavItem(props: INavItem) {
   return (
