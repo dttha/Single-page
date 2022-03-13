@@ -38,9 +38,8 @@ a {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   margin: 0 85px;
-  padding-top: 30px;
 }
 
 .flex {
@@ -56,17 +55,15 @@ a {
 
 .button {
   background-color: #15bcaf;
-  border-radius: 27px;
+  border-radius: 50px;
   cursor: pointer;
-}
-
-.content_btn {
   display: block;
   color: #fff;
   font-family: "Harmonia Sans Pro Cyr Semi Bold";
   font-weight: 600;
   font-size: 20px;
-  padding: 18px 43px;
+  padding: 16px 43px;
+  text-align: center;
 }
 
 .mt-5 {
@@ -101,6 +98,8 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+  z-index: 3;
+  position: relative;
 }
 
 @media (max-width: 375px) {
@@ -147,3 +146,6 @@ a {
     margin: 0 auto;
   }
 } */
+span {
+  display: block !important;
+}

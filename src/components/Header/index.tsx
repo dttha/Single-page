@@ -5,12 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
 import img from '../../../public/Group 18 Copy.png'
 import styles from '../../components/Header/header.module.css'
+import Button from '../Button'
 
 export default function Header() {
   const [checked, setChecked] = useState<boolean>(false)
-  useEffect(() => {
-
-  }, [])
   return (
     <div className={styles.header}>
       <div className="container flex justify-content-between align-items-center">
@@ -63,13 +61,11 @@ export default function Header() {
               <Link href=''>Contact</Link>
             </div>
           </li>
-
+          <li className={styles.btn_start_lg}>
+            <Button>Get started</Button>
+          </li>
         </ul>
-        <div className={"button " + styles.hidden}>
-          <div className="content_btn">Get started</div>
-        </div>
-      </div>
-      <div>
+        <Button className={styles.btn_start_xl}>Get started</Button>
       </div>
     </div>
   )
