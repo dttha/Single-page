@@ -1,9 +1,9 @@
+import React from 'react'
+import Link from 'next/link';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
-import React from 'react'
-import styles from '../../components/Header/header.module.css'
 import { INavItem } from '../../model';
+import styles from '../../components/Header/header.module.css'
 
 export default function NavItem(props: INavItem) {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
-import Image from 'next/image'
 import img from '../../../public/Group 18 Copy.png'
-import styles from '../../../src/components/Footer/footer.module.css'
 import Button from '../Button'
+import styles from '../../../src/components/Footer/footer.module.css'
 
 export default function Footer() {
   return (
@@ -52,7 +52,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
           <div className={styles.wrap_list}>
             <div className={styles.list_title}>
               more about xo
@@ -82,7 +81,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       <div className={styles.copyright}>
@@ -95,14 +93,12 @@ export default function Footer() {
               Document&nbsp;
               <FontAwesomeIcon className={styles.font_icon} icon={faCircle} style={{ fontSize: 5, marginBottom: 3, marginLeft: 3, marginRight: 5 }} />
               Chanelog
-
             </div>
             <FontAwesomeIcon className={styles.font_icon} icon={faFacebook} />
             <FontAwesomeIcon className={styles.font_icon} icon={faTwitter} />
           </div>
         </div>
       </div >
-
     </div>
   )
 }

@@ -12,17 +12,12 @@
 }
 
 .list_title {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
   letter-spacing: 0.5px;
   text-transform: uppercase;
-
   color: #ffffff;
-
   mix-blend-mode: normal;
   opacity: 0.5;
 }
@@ -32,14 +27,12 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
-  /* or 111% */
-
   color: #ffffff;
-
   mix-blend-mode: normal;
   opacity: 0.9;
   padding: 0;
 }
+
 .list_item {
   line-height: 18px;
   font-size: 16px;
@@ -61,6 +54,7 @@
   object-fit: contain;
   height: 40px;
 }
+
 .background {
   width: 100%;
   aspect-ratio: 16 / 5;
@@ -144,10 +138,6 @@
 
 .wrap_content_footer {
   padding-top: 190px;
-  /* cach thu nho theo width man hinh
-  nhung no se khong chinh xac dc px
-  thi dung 1 cai media xong tinh theo cai nay la dc vw la view width
-  100vw = man hinh tuong tu voi vh*/
   padding-left: 235px;
   max-width: 100%;
   width: calc(624px + 250px);
@@ -209,27 +199,17 @@
     width: 120px !important;
     height: 35px !important;
   }
+
   .wrap_footer {
     padding-left: 33px;
     padding-right: 33px;
     margin-top: 55px;
   }
+
   .wrap_list {
     width: 144px;
   }
-  .grid_container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    max-width: 350px;
-  }
-  .grid_item {
-    font-family: "Harmonia Sans Pro Cyr Semi Bold";
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    line-height: 18px;
-    opacity: 0.9;
-  }
+
   .font {
     color: #ffffff;
     opacity: 0.5 !important;
@@ -239,17 +219,20 @@
     font-weight: 600;
     font-family: "Harmonia Sans Pro Cyr Semi Bold";
   }
+
   .background_image {
     background-image: url("../../../public/banner\ 4_4.png");
     background-position: bottom;
     background-size: unset;
   }
+
   .wrap_content_footer {
     padding-left: 8px;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 192px;
   }
+
   .fontWhite {
     font-size: 28px;
     line-height: 36px;
@@ -259,6 +242,7 @@
     font-size: 28px;
     line-height: 36px;
   }
+
   .background_linear {
     position: absolute;
     width: 100%;
@@ -266,7 +250,6 @@
     left: 0px;
     bottom: 285px;
     z-index: 2;
-
     background: linear-gradient(
       0deg,
       rgba(33, 41, 136, 0.0001) 30.6%,

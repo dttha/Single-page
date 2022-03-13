@@ -102,6 +102,7 @@
 .sub_menu_item {
   color: #ffffff;
 }
+
 .wrap_icon {
   display: flex;
   position: relative;
@@ -125,6 +126,7 @@
   opacity: 0;
   transition: all 0.5s;
 }
+
 .menu_item:hover .icon_fake_arrow {
   opacity: 1;
   right: -3px;
@@ -174,19 +176,23 @@
 .font_icon_menu {
   font-size: 30px;
 }
+
 .btn_start_lg {
   display: none;
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
 @media (max-width: 1200px) {
   .btn_menu {
     display: block;
   }
+
   .wrap_btn_checkbox {
     position: relative;
     display: block;
   }
+
   .menu {
     position: absolute;
     width: 0;
@@ -203,21 +209,22 @@
     transition: all 0.5s ease-in-out;
     height: 0;
   }
-  .hidden {
-    display: none;
-  }
+
   .header .showMenu {
     position: absolute;
     right: 0;
     width: 100%;
     height: calc(100vh - 80px);
   }
+
   .btn_header {
     margin-top: 40px;
   }
+
   .btn_start_xl {
     display: none;
   }
+
   .btn_start_lg {
     display: block;
     position: absolute;
