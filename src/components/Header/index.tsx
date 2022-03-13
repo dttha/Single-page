@@ -1,11 +1,56 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faBars } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
+import Link from 'next/link'
+import React, { useState } from 'react'
 import img from '../../../public/Group 18 Copy.png'
 import styles from '../../components/Header/header.module.css'
 import Button from '../Button'
+import NavItem, { INavItem } from '../NavItem'
+
+
+const menu: INavItem[] = [
+  {
+    title: 'Product',
+    href: '/product',
+    subMenu: [
+      {
+        title: 'Shooes',
+        href: '/product/1'
+      },
+      {
+        title: 'Theme gallery',
+        href: '/product/2'
+      },
+      {
+        title: 'Blog',
+        href: '/product/3'
+      }
+    ]
+  },
+  {
+    title: 'Theme gallery',
+    href: '/theme-gallery'
+  },
+  {
+    title: 'Blog',
+    href: '/blog',
+    subMenu: [
+      {
+        title: 'Blog 1',
+        href: '/blog/1'
+      },
+    ]
+  },
+  {
+    title: 'About us',
+    href: '/about-us'
+  },
+  {
+    title: 'Contact',
+    href: '/contact'
+  }
+]
 
 export default function Header() {
   const [checked, setChecked] = useState<boolean>(false)
@@ -28,39 +73,15 @@ export default function Header() {
         </div>
 
         <ul className={`flex ${styles.menu}  ${checked ? styles.showMenu : ''}`} id="menu">
-          <li className={styles.menu_item}>
-            <div className={styles.link}>
-              <Link href=''>Product</Link>
-              &nbsp;
-              <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
-            </div>
-          </li>
-
-          <li className={styles.menu_item}>
-            <div className={styles.link}>
-              <Link href=''>Theme gallery</Link>
-            </div>
-          </li>
-
-          <li className={styles.menu_item}>
-            <div className={styles.link}>
-              <Link href=''>Blog</Link>
-              &nbsp;
-              <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
-            </div>
-          </li>
-
-          <li className={styles.menu_item}>
-            <div className={styles.link}>
-              <Link href=''>About us</Link>
-            </div>
-          </li>
-
-          <li className={styles.menu_item}>
-            <div className={styles.link}>
-              <Link href=''>Contact</Link>
-            </div>
-          </li>
+          {menu.map((item) => {
+            return <NavItem
+              key={item.href}
+              title={item.title}
+              href={item.href}
+              subMenu={item.subMenu}
+              className={item.className}
+            ></NavItem>
+          })}
           <li className={styles.btn_start_lg}>
             <Button>Get started</Button>
           </li>

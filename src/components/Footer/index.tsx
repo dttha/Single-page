@@ -5,6 +5,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 import img from '../../../public/Group 18 Copy.png'
 import styles from '../../../src/components/Footer/footer.module.css'
+import Button from '../Button'
 
 export default function Footer() {
   return (
@@ -23,9 +24,7 @@ export default function Footer() {
                 Try it for free and create a meaningful connection with your audiences with our professionally designed tools!
               </div>
             </div>
-            <div className="button">
-              <div className="content_btn">Get started</div>
-            </div>
+            <Button>Get started</Button>
           </div>
         </div>
       </div>

@@ -92,7 +92,7 @@
 }
 
 .background_image {
-  object-fit: cover;
+  background-size: cover;
   background-image: url("../../../public/banner\ 4_3.png");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -151,7 +151,7 @@
   padding-left: 235px;
   max-width: 100%;
   width: calc(624px + 250px);
-  padding-bottom: 400px;
+  padding-bottom: 267px;
   position: relative;
 }
 
@@ -242,6 +242,7 @@
   .background_image {
     background-image: url("../../../public/banner\ 4_4.png");
     background-position: bottom;
+    background-size: unset;
   }
   .wrap_content_footer {
     padding-left: 8px;

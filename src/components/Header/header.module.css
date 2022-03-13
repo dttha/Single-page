@@ -3,7 +3,7 @@
   background-color: #13157f;
   position: sticky;
   top: 0;
-  z-index: 100000;
+  z-index: 10;
   height: 80px;
   display: flex;
   align-items: center;
@@ -60,10 +60,28 @@
   cursor: pointer;
   line-height: 24px;
   font-family: "Harmonia Sans Pro Cyr Regular";
+  position: relative;
 }
-.menu_item:hover .link a,
-.menu_item:hover .link {
+
+.menu_item:hover {
   color: #575bda;
+}
+
+.sub_menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #13157f;
+  z-index: 11;
+}
+
+.menu_item:hover .sub_menu {
+  display: block;
+}
+
+.sub_menu_item {
+  color: #ffffff;
 }
 
 .btn_menu {
@@ -103,6 +121,7 @@
 
 .font_icon_down {
   font-size: 12px;
+  padding-left: 8px;
 }
 
 .font_icon_menu {
@@ -110,6 +129,8 @@
 }
 .btn_start_lg {
   display: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 @media (max-width: 1200px) {
   .btn_menu {
