@@ -64,7 +64,7 @@
 }
 
 .menu_item:hover {
-  color: #575bda;
+  color: #15bcaf;
 }
 
 .sub_menu {
@@ -72,16 +72,62 @@
   position: absolute;
   top: 40px;
   left: 0;
-  background: #13157f;
+  background: #fff;
+  border-radius: 4px;
   z-index: 11;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .menu_item:hover .sub_menu {
   display: block;
 }
 
+.sub_menu .menu_item {
+  width: 100%;
+  border-radius: 0;
+}
+
+.sub_menu .menu_item .link {
+  color: #13157f;
+}
+
+.sub_menu .menu_item:hover .link {
+  color: #15bcaf;
+}
+
+.sub_menu .menu_item:not(:last-child) {
+  border-bottom: 1px solid #bbb;
+}
+
 .sub_menu_item {
   color: #ffffff;
+}
+.wrap_icon {
+  display: flex;
+  position: relative;
+}
+
+.menu_item:hover .font_icon_down {
+  transform: rotateZ(-90deg) translateX(-5.25px) translateY(10px);
+  transform-origin: center;
+  position: relative;
+}
+
+.menu_item .icon_fake_arrow {
+  width: 15px;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  right: 10px;
+  background-color: #15bcaf;
+  z-index: 20;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.menu_item:hover .icon_fake_arrow {
+  opacity: 1;
+  right: -3px;
 }
 
 .btn_menu {
@@ -122,6 +168,7 @@
 .font_icon_down {
   font-size: 12px;
   padding-left: 8px;
+  transition: all 0.5s;
 }
 
 .font_icon_menu {

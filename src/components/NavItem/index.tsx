@@ -14,11 +14,14 @@ export interface INavItem {
 export default function NavItem(props: INavItem) {
   return (
     <li className={`${styles.menu_item} ${props.className}`}>
-      <div className={styles.link}>
+      <div className={styles.link + " flex align-items-center"}>
         <Link href={props.href}>{props.title}</Link>
         {props.subMenu &&
           <>
-            <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
+            <div className={styles.wrap_icon}>
+              <div className={styles.icon_fake_arrow}></div>
+              <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
+            </div>
             <div className={styles.sub_menu}>
               {props.subMenu.map((i, index) => {
                 return <div className={`${styles.menu_item} ${i.className}`} key={index}>
