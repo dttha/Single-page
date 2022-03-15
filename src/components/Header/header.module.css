@@ -32,13 +32,9 @@
   top: -10px;
   left: -10px;
   position: absolute;
-
   cursor: pointer;
-
-  opacity: 0; /* hide this */
-  z-index: 3; /* and place it over the hamburger */
-
-  -webkit-touch-callout: none;
+  opacity: 0;
+  z-index: 3;
 }
 
 .menu {
@@ -50,7 +46,7 @@
   display: block;
 }
 
-.menu .menu_item {
+.menu_item {
   display: inline-block;
   border-radius: 5px;
   font-size: 20px;
@@ -183,6 +179,10 @@
   transform: translateX(-50%);
 }
 
+.show_btn_start {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .btn_menu {
     display: block;
@@ -194,6 +194,7 @@
   }
 
   .menu {
+    display: none;
     position: absolute;
     width: 0;
     right: 0;
@@ -210,11 +211,19 @@
     height: 0;
   }
 
-  .header .showMenu {
+  .showMenuMobile {
     position: absolute;
     right: 0;
     width: 100%;
     height: calc(100vh - 80px);
+  }
+
+  .show_btn_start {
+    display: block;
+    position: absolute;
+    bottom: -600px;
+    z-index: 15;
+    right: 50%;
   }
 
   .btn_header {
@@ -226,9 +235,13 @@
   }
 
   .btn_start_lg {
-    display: block;
-    position: absolute;
-    bottom: 18px;
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .show_btn_start {
+    right: 25%;
   }
 }
 

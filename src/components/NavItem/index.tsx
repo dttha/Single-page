@@ -9,7 +9,7 @@ export default function NavItem(props: INavItem) {
   return (
     <li className={`${styles.menu_item} ${props.className}`}>
       <div className={styles.link + " flex align-items-center"}>
-        <Link href={props.href}>{props.title}</Link>
+        <div>{props.title}</div>
         {props.subMenu &&
           <>
             <div className={styles.wrap_icon}>
