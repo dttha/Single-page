@@ -179,6 +179,14 @@
   display: none;
 }
 
+.sub_menu .menu_item .link a {
+  color: #13157f;
+}
+
+.sub_menu .menu_item:hover .link a {
+  color: #15bcaf;
+}
+
 @media (max-width: 1200px) {
   .btn_menu {
     display: block;

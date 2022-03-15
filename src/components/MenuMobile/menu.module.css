@@ -3,19 +3,7 @@
   border-radius: 0;
 }
 
-.sub_menu .menu_item a {
-  color: #13157f !important;
-}
-
 .menu_item:hover .font_icon_arrow_right {
-  color: #15bcaf;
-}
-
-.menu_item:hover a {
-  color: #15bcaf;
-}
-
-.menu_item:hover .link {
   color: #15bcaf;
 }
 
@@ -33,6 +21,14 @@
 
 .menu_item .link a {
   color: #fff;
+}
+
+.menu_item:hover .link a {
+  color: #15bcaf;
+}
+
+.menu_item:hover .link {
+  color: #15bcaf;
 }
 
 .font_icon_arrow_right {
