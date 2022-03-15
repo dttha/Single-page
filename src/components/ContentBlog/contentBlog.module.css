@@ -1,0 +1,31 @@
+.wrapper {
+  background-color: #13157f;
+  padding-top: 123px;
+  padding-left: 249px;
+  max-width: 100%;
+}
+
+.content_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding-left: calc(10px + 10%);
+    padding-bottom: calc(10px + 5%);
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    padding-left: 8px;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+}
