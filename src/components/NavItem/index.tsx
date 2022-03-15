@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { INavItem } from '../../model';
 import styles from '../../components/Header/header.module.css'
 
-export default function NavItem(props: INavItem) {
+function NavItem(props: INavItem) {
+  console.log("NavItem");
+
   return (
     <li className={`${styles.menu_item} ${props.className}`}>
       <div className={styles.link + " flex align-items-center"}>
@@ -31,3 +33,4 @@ export default function NavItem(props: INavItem) {
     </li>
   )
 }
+export default React.memo(NavItem);

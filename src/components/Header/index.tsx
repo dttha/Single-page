@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import img from '../../../public/Group 18 Copy.png'
 import Button from '../Button'
@@ -6,13 +6,67 @@ import NavItem from '../NavItem'
 import { MENU } from '../../constants'
 import MenuMobile from '../MenuMobile'
 import styles from '../../components/Header/header.module.css'
+interface IStylesNav {
+  top: number;
+  position: "static" | "relative" | "absolute" | "sticky" | "fixed"
+}
 
 export default function Header() {
   const [checked, setChecked] = useState<boolean>(false)
-  const [open, setOpen] = useState<boolean>(true)
+  const y = useRef(0)
+  const [stylesNav, setStylesNav] = useState<IStylesNav>({
+    top: 0,
+    position: "sticky"
+  })
+
+  console.log("re-render header");
+
+  const handleNavigation = useCallback(
+    (e) => {
+      const window = e.currentTarget;
+      if (y.current > window.scrollY) {
+        if (stylesNav.top === -80) {
+          setStylesNav((prev) => {
+            if (prev.position !== "sticky") {
+              return {
+                top: 0,
+                position: 'sticky',
+              }
+            }
+            return prev
+          });
+        }
+      } else if (y.current < window.scrollY) {
+        if (stylesNav.top === 0) {
+          setStylesNav(
+            (prev) => {
+              if (prev.position !== "fixed") {
+                return {
+                  top: -80,
+                  position: 'fixed',
+                }
+              }
+              return prev
+            });
+        }
+      }
+      y.current = window.scrollY
+    },
+    [y, stylesNav]
+  );
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleNavigation);
+    return () => {
+      window.removeEventListener('scroll', handleNavigation);
+    };
+  }, [handleNavigation]);
 
   return (
-    <div className={styles.header}>
+    <div
+      className={styles.header}
+      style={{ top: stylesNav.top, position: stylesNav.position }}
+    >
       <MenuMobile open={checked} data={MENU} setOpen={setChecked}></MenuMobile>
       <div className="container flex justify-content-between align-items-center">
         <div className="flex">

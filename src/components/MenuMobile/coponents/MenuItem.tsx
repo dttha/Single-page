@@ -1,6 +1,6 @@
-import { faArrowRight, faChevronDown, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Drawer, Menu } from 'antd';
+import { Drawer } from 'antd';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { INavItem } from '../../../model'
@@ -11,7 +11,7 @@ interface IMenuItem {
 
 }
 
-export const MenuItemMobile = (props: IMenuItem) => {
+const MenuItemMobile = (props: IMenuItem) => {
   const [open, setOpen] = useState<boolean>(false)
   const { item } = props
   return (
@@ -55,3 +55,4 @@ export const MenuItemMobile = (props: IMenuItem) => {
     </>
   )
 }
+export default React.memo(MenuItemMobile)

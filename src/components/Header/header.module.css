@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s ease 0s;
 }
 
 .logo {
@@ -61,6 +64,7 @@
 
 .menu_item:hover {
   color: #15bcaf;
+  transition: all 0.5s;
 }
 
 .sub_menu {
@@ -76,6 +80,7 @@
 
 .menu_item:hover .sub_menu {
   display: block;
+  animation: fadein 2s;
 }
 
 .sub_menu .menu_item {
@@ -84,11 +89,12 @@
 }
 
 .sub_menu .menu_item .link {
-  color: #13157f !important;
+  color: #13157f;
 }
 
 .sub_menu .menu_item:hover a {
-  color: #15bcaf !important;
+  color: #15bcaf;
+  transition: 0.5s;
 }
 
 .sub_menu .menu_item:not(:last-child) {
@@ -185,6 +191,7 @@
 
 .sub_menu .menu_item:hover .link a {
   color: #15bcaf;
+  transition: 0.5s;
 }
 
 @media (max-width: 1200px) {

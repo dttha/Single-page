@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -121,6 +122,16 @@ span {
   bottom: 85px;
   right: 85px;
   cursor: pointer;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .go-to-top-icon {

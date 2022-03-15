@@ -7,7 +7,9 @@ import img from '../../../public/Group 18 Copy.png'
 import Button from '../Button'
 import styles from '../../../src/components/Footer/footer.module.css'
 
-export default function Footer() {
+function Footer() {
+  console.log("re-render footer");
+
   return (
     <div className={styles.footer}>
       <div className={styles.background_image}>
@@ -102,3 +104,4 @@ export default function Footer() {
     </div>
   )
 }
+export default React.memo(Footer)

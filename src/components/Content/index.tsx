@@ -6,7 +6,8 @@ import line from '../../../public/line 4_1.png'
 import banner from '../../../public/iStock_627198666.png'
 import styles from '../Content/content.module.css'
 
-export default function Content() {
+function Content() {
+  console.log("re-render Content");
   return (
     <div className={styles.content}>
       <div className={styles.wrap_content}>
@@ -37,3 +38,4 @@ export default function Content() {
     </div>
   )
 }
+export default React.memo(Content)

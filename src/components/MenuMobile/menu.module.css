@@ -5,6 +5,7 @@
 
 .menu_item:hover .font_icon_arrow_right {
   color: #15bcaf;
+  transition: 0.5s;
 }
 
 .menu_item {
@@ -25,10 +26,12 @@
 
 .menu_item:hover .link a {
   color: #15bcaf;
+  transition: 0.5s;
 }
 
 .menu_item:hover .link {
   color: #15bcaf;
+  transition: 0.5s;
 }
 
 .font_icon_arrow_right {

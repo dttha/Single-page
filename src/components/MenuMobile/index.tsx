@@ -2,7 +2,7 @@ import { INavItem } from '../../model';
 import styles from './menu.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { MenuItemMobile } from './coponents/MenuItem';
+import MenuItemMobile from './coponents/MenuItem';
 import { Drawer } from 'antd';
 interface IMenuMobile {
   open: boolean;
@@ -12,7 +12,6 @@ interface IMenuMobile {
 
 
 export default function MenuMobile(props: IMenuMobile) {
-  console.log(props.data);
   return (
     <Drawer
       handler={false}
