@@ -61,6 +61,7 @@
 .menu_item:hover {
   color: #15bcaf;
   transition: all 0.5s;
+  transform: translateY(4px);
 }
 
 .sub_menu {
