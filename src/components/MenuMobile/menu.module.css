@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.menu_item .link {
+.menu_item .link a {
   color: #fff;
 }
 
