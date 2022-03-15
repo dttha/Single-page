@@ -45,10 +45,6 @@
   transition: 0;
 }
 
-.hidden {
-  display: block;
-}
-
 .menu_item {
   display: inline-block;
   border-radius: 5px;
