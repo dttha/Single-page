@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 import img from '../../../public/Group 18 Copy.png'
 import Button from '../Button'
@@ -13,49 +13,37 @@ interface IStylesNav {
 
 export default function Header() {
   const [checked, setChecked] = useState<boolean>(false)
-  const y = useRef(0)
+  const [y, setY] = useState(0)
   const [stylesNav, setStylesNav] = useState<IStylesNav>({
     top: 0,
     position: "sticky"
   })
 
-  console.log("re-render header");
-
   const handleNavigation = useCallback(
     (e) => {
       const window = e.currentTarget;
-      if (y.current > window.scrollY) {
+      if (y > window.scrollY) {
         if (stylesNav.top === -80) {
-          setStylesNav((prev) => {
-            if (prev.position !== "sticky") {
-              return {
-                top: 0,
-                position: 'sticky',
-              }
-            }
-            return prev
+          setStylesNav({
+            top: 0,
+            position: 'sticky',
           });
         }
-      } else if (y.current < window.scrollY) {
+      } else if (y < window.scrollY) {
         if (stylesNav.top === 0) {
-          setStylesNav(
-            (prev) => {
-              if (prev.position !== "fixed") {
-                return {
-                  top: -80,
-                  position: 'fixed',
-                }
-              }
-              return prev
-            });
+          setStylesNav({
+            top: -80,
+            position: 'fixed',
+          });
         }
       }
-      y.current = window.scrollY
+      setY(window.scrollY)
     },
     [y, stylesNav]
   );
 
   useEffect(() => {
+    setY(window.scrollY);
     window.addEventListener('scroll', handleNavigation);
     return () => {
       window.removeEventListener('scroll', handleNavigation);
