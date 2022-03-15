@@ -24,12 +24,15 @@
   border-radius: 5px;
   font-size: 20px;
   padding: 12px;
-  color: #fff;
   font-weight: 400;
   cursor: pointer;
   line-height: 24px;
   font-family: "Harmonia Sans Pro Cyr Regular";
   position: relative;
+}
+
+.menu_item .link {
+  color: #fff;
 }
 
 .font_icon_arrow_right {

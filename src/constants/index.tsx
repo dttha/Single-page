@@ -7,7 +7,23 @@ export const MENU: INavItem[] = [
     subMenu: [
       {
         title: 'Shooes',
-        href: '/product/1'
+        href: '/product/1',
+        subMenu: [
+          {
+            title: 'Theme gallery',
+            href: '/product/2',
+            subMenu: [
+              {
+                title: 'Blog',
+                href: '/product/3'
+              }
+            ]
+          },
+          {
+            title: 'Blog',
+            href: '/product/3'
+          }
+        ]
       },
       {
         title: 'Theme gallery',

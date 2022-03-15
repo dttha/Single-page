@@ -41,11 +41,7 @@ export const MenuItemMobile = (props: IMenuItem) => {
           contentWrapperStyle={{ color: "#fff" }}
         >
           {item.subMenu.map((i, index) => {
-            return <div className={`${styles.menu_item} ${i.className}`} key={index}>
-              <div className={styles.link}>
-                <Link href={i.href}>{i.title}</Link>
-              </div>
-            </div>
+            return <MenuItemMobile item={i} key={index} />
           })}
         </Drawer>
       </> :
