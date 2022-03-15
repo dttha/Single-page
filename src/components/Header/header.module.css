@@ -84,11 +84,11 @@
 }
 
 .sub_menu .menu_item .link {
-  color: #13157f;
+  color: #13157f !important;
 }
 
-.sub_menu .menu_item:hover .link {
-  color: #15bcaf;
+.sub_menu .menu_item:hover a {
+  color: #15bcaf !important;
 }
 
 .sub_menu .menu_item:not(:last-child) {

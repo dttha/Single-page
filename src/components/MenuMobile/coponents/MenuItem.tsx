@@ -1,4 +1,6 @@
-import { Drawer } from 'antd';
+import { faArrowRight, faChevronDown, faClose } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Drawer, Menu } from 'antd';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { INavItem } from '../../../model'
@@ -20,18 +22,30 @@ export const MenuItemMobile = (props: IMenuItem) => {
         }}>
           <div className={styles.link + " flex align-items-center"}>
             <div >{item.title}</div>
+            <FontAwesomeIcon className={styles.font_icon_arrow_right} icon={faArrowRight} />
           </div>
         </div>
         <Drawer
           handler={false}
           visible={open}
           placement="left"
+          width="200px"
           className={styles.drawer}
+          level={null}
           onClose={() => {
             setOpen(false)
-          }}>
-          {item.subMenu.map((i) => {
-            return 123
+          }}
+          bodyStyle={{ backgroundColor: "#13157F" }}
+          headerStyle={{ backgroundColor: "#13157F", color: "#fff" }}
+          closeIcon={<FontAwesomeIcon icon={faClose} color="#fff" fontSize="18px"></FontAwesomeIcon>}
+          contentWrapperStyle={{ color: "#fff" }}
+        >
+          {item.subMenu.map((i, index) => {
+            return <div className={`${styles.menu_item} ${i.className}`} key={index}>
+              <div className={styles.link}>
+                <Link href={i.href}>{i.title}</Link>
+              </div>
+            </div>
           })}
         </Drawer>
       </> :
