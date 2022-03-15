@@ -29,7 +29,7 @@ export const MenuItemMobile = (props: IMenuItem) => {
           handler={false}
           visible={open}
           placement="left"
-          width="200px"
+          width="250px"
           className={styles.drawer}
           level={null}
           onClose={() => {
