@@ -1,11 +1,10 @@
 .wrapper {
   background-color: #13157f;
-  padding-top: 123px;
-  padding-left: 249px;
-  max-width: 100%;
 }
 
 .content_title {
+  padding-top: 123px;
+  padding-left: 249px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
@@ -13,19 +12,248 @@
   line-height: 56px;
   letter-spacing: -0.5px;
   color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.container_blog {
+  margin: 0 230px;
+  height: 650px;
+  margin-bottom: 110px;
+}
+
+.wrap_img_blog {
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+
+.image_blog {
+  /* background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 57.22%
+  );
+  z-index: 4; */
+  /* border-radius: 20px; */
+  cursor: pointer;
+  position: relative;
+}
+
+.image_blog::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 57.22%
+  );
+  z-index: 4;
+  border-radius: 15px;
+}
+
+.img_blog {
+  z-index: 3;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.block_casestudy {
+  width: 28%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  position: relative;
+}
+
+.wrap_content_img {
+  top: 500px;
+  right: 25%;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 5;
+}
+
+.date {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 15px;
+}
+
+.des {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.container_block_casestudy {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title_block_casestudy {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.line_block_casestudy {
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.end_block_casestudy {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: #15bcaf;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.row {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.image_row {
+  width: 110px;
+}
+
+.img_row {
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.content_row {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-left: 15px;
+}
+
+.content_row span {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1700px) {
+  .container_blog {
+    margin: 0 80px;
+  }
+
+  .wrap_content_img {
+    top: 500px;
+    right: 25%;
+  }
+
+  .container_blog {
+    margin-bottom: 110px;
+  }
+}
+
+@media (max-width: 1600px) {
 }
 
 @media (max-width: 1200px) {
-  .wrapper {
-    padding-left: calc(10px + 10%);
-    padding-bottom: calc(10px + 5%);
+  .container_blog {
+    margin: 0 60px;
+  }
+
+  .content_title {
+    padding-top: 100px;
+    padding-left: 120px;
+    padding-bottom: 50px;
+  }
+
+  .wrap_content_img {
+    top: 250px;
+    right: 20%;
+    margin-left: 35px;
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 992px) {
+  .img_blog {
+    width: 600px;
+    height: 300px;
+  }
+
+  .container_blog {
+    margin: 0 50px;
+  }
+
+  .content_title {
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 672px) {
+  .img_blog {
+    width: 500px;
+    height: 200px;
+  }
+
+  .content_title {
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-bottom: 50px;
   }
 }
 
 @media (max-width: 375px) {
-  .wrapper {
-    padding-left: 8px;
-    margin: 0 auto;
-    padding-top: 60px;
+  .img_blog {
+    width: 150px;
+    height: 100px;
+  }
+
+  .content_title {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
