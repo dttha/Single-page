@@ -2,6 +2,10 @@
   background-color: #13157f;
 }
 
+.section1 {
+  background-color: #fff;
+}
+
 .content_title {
   padding-top: 123px;
   padding-left: 249px;
@@ -16,25 +20,17 @@
 }
 
 .container_blog {
-  margin: 0 230px;
-  height: 650px;
+  margin: 0 220px;
   margin-bottom: 110px;
 }
 
 .wrap_img_blog {
   position: relative;
   height: 100%;
-  width: 70%;
+  width: 63%;
 }
 
 .image_blog {
-  /* background: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 57.22%
-  );
-  z-index: 4; */
-  /* border-radius: 20px; */
   cursor: pointer;
   position: relative;
 }
@@ -62,15 +58,15 @@
 }
 
 .block_casestudy {
-  width: 28%;
-  height: 100%;
+  width: 35%;
+  min-height: 100%;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   position: relative;
 }
 
 .wrap_content_img {
-  top: 500px;
+  top: 390px;
   right: 25%;
   margin-left: 40px;
   position: absolute;
@@ -170,8 +166,33 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
-
   color: rgba(255, 255, 255, 0.2);
+}
+
+.block_post_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.block_post_date {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #808080;
+  cursor: pointer;
+}
+
+.container_post {
+  margin-top: 100px !important;
 }
 
 @media (max-width: 1700px) {
@@ -180,7 +201,7 @@
   }
 
   .wrap_content_img {
-    top: 500px;
+    top: 130px;
     right: 25%;
   }
 
@@ -204,9 +225,10 @@
   }
 
   .wrap_content_img {
-    top: 250px;
+    top: 50px;
     right: 20%;
     margin-left: 35px;
+    margin-bottom: 30px;
     position: absolute;
     z-index: 3;
   }

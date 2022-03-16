@@ -128,7 +128,7 @@
 .wrap_footer {
   padding-left: 86px;
   padding-right: 86px;
-  margin-top: 70px;
+  padding-top: 70px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -181,7 +181,7 @@
   .wrap_footer {
     padding-left: 52px;
     padding-right: 52px;
-    margin-top: 55px;
+    padding-top: 55px;
   }
 }
 
@@ -203,7 +203,6 @@
   .wrap_footer {
     padding-left: 33px;
     padding-right: 33px;
-    margin-top: 55px;
   }
 
   .wrap_list {

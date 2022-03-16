@@ -45,7 +45,7 @@ export const MENU: INavItem[] = [
     subMenu: [
       {
         title: 'Blog 1',
-        href: '/blog/1'
+        href: '/blog'
       },
     ]
   },

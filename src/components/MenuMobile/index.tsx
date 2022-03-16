@@ -1,7 +1,7 @@
 import { INavItem } from '../../model';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
-import { MenuItemMobile } from './coponents/MenuItem';
+import { MenuItemMobile } from './coponents/menuItem';
 import { Drawer } from 'antd';
 import styles from './menu.module.css'
 interface IMenuMobile {
