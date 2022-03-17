@@ -21,6 +21,7 @@
   margin: 0;
   cursor: pointer;
   object-fit: contain;
+  color: #13157f;
 }
 
 .wrap_btn_checkbox {
@@ -43,6 +44,7 @@
 .menu {
   list-style: none;
   transition: 0;
+  margin-top: 15px;
 }
 
 .menu_item {

@@ -4,3 +4,10 @@ export interface INavItem {
   subMenu?: INavItem[];
   className?: string;
 }
+export interface IPost {
+  id: number;
+  title: string;
+  slug: string;
+  publishDate: Date;
+  status: string;
+}

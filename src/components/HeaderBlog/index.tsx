@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
-import img from '../../../public/Group 18 Copy.png'
+import img from '../../../public/logo2.png'
 import Button from '../Button'
 import NavItemBlog from '../NavItemBlog'
 import { MENU } from '../../constants'
