@@ -22,6 +22,7 @@
 
 .menu_item .link a {
   color: #fff;
+  text-decoration: none;
 }
 
 .menu_item:hover .link a {

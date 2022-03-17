@@ -186,6 +186,7 @@
 
 .sub_menu .menu_item .link a {
   color: #13157f;
+  text-decoration: none;
 }
 
 .sub_menu .menu_item:hover .link a {
