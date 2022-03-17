@@ -1,4 +1,4 @@
-import { faArrowRight, faChevronDown, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faClose } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Drawer } from 'antd';
 import Link from 'next/link'

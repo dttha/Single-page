@@ -139,12 +139,6 @@ span {
   color: #13157f;
 }
 
-@media (max-width: 992px) {
-  .flex {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 375px) {
   .container {
     max-width: 100%;
