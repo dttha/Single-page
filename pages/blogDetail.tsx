@@ -1,10 +1,9 @@
 import { useRouter } from 'next/router';
 import BlogDetail from '../src/components/BlogDetail';
-import ContextFooter from '../src/components/Footer/components/Footer';
+import ContextFooter from '../src/components/Footer/components/footer';
 import HeaderBlog from '../src/components/HeaderBlog';
 
 const BlogDetailPage = () => {
-  const router = useRouter();
 
   return (
     <div>
