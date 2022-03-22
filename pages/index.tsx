@@ -6,6 +6,7 @@ import type { NextPage } from 'next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
+import SectionHome from '../src/components/Content/components/Section'
 
 const Home: NextPage = () => {
   const [activeBtnTop, setActiveBtnTop] = useState(false)
@@ -36,7 +37,8 @@ const Home: NextPage = () => {
         <FontAwesomeIcon className="go-to-top-icon" icon={faArrowUp}></FontAwesomeIcon>
       </div>}
       <Header />
-      <Content />
+      {/* <Content /> */}
+      <SectionHome />
       <Footer />
     </div>
   )

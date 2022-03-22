@@ -1,0 +1,180 @@
+.wrap_section {
+  background: #f7f7f7;
+}
+
+.wrap_content_title {
+  margin-left: 326px;
+  padding-top: 163px;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrap_first {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.number {
+  font-family: "Source Serif Pro";
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 88px;
+  color: #13157f;
+}
+
+.text {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: rgba(19, 21, 127, 0.8);
+}
+
+.wrap_text {
+  width: 55%;
+  display: inline;
+  margin-left: 156px;
+}
+
+.title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 62px;
+  color: #13157f;
+}
+
+.wrap_text span {
+  color: #15bcaf;
+  display: inline-block !important;
+}
+
+.description {
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 26px;
+  color: #676767;
+  margin-top: 34px;
+  max-width: 85%;
+}
+
+.wrap_image {
+  margin: 132px 233px 0;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.form {
+  position: absolute;
+  top: 90px;
+  left: 938px;
+  right: 152px;
+  bottom: 144px;
+}
+
+.content_suggestion {
+  display: flex;
+  flex-direction: row;
+  margin-left: 77px;
+}
+
+.form_text {
+  font-family: "Source Serif Pro";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.content_suggestion .form_text {
+  width: 10%;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form_input_icon {
+  background: #f2f2f2;
+  opacity: 0.85;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.form_box {
+  opacity: 0.4;
+  border: 1.5px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 18px;
+  width: 290px;
+  height: 102px;
+}
+
+.form_field {
+  font-family: "Manrope";
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-left: 21px;
+  margin-top: 15px;
+}
+
+.powerful {
+  width: 40%;
+  margin-left: 274px;
+  padding-top: 176px;
+}
+
+.powerful span {
+  color: #15bcaf;
+  display: inline-block !important;
+}
+
+.powerful .description {
+  max-width: 60%;
+}
+
+.btn {
+  padding-top: 56px;
+  margin-left: 274px;
+  max-width: 270px;
+  position: relative;
+  z-index: 10;
+}
+
+.group_img {
+  margin-left: 346px;
+  margin-right: 233px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 8;
+  padding-bottom: 160px;
+}
+
+.form_box2 {
+  opacity: 0.4;
+  border: 1.5px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 18px;
+  width: 290px;
+  height: 295px;
+}
+
+.img4 {
+  margin-left: -5px;
+  margin-top: -20px;
+  margin-right: 310px;
+}

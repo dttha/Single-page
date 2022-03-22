@@ -12,18 +12,17 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.background_image}>
         <div className={styles.wrap_content_footer}>
-          <div className={styles.background_linear}></div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className={styles.context}>
-                <span className={styles.fontWhite}>Building your</span>
-                <span className={styles.fontGreen}> Branded eCommerce Experience</span>
-                <span className={styles.fontWhite}> today with Xopify!</span>
-              </div>
-              <div className={styles.description}>
-                Try it for free and create a meaningful connection with your audiences with our professionally designed tools!
-              </div>
-            </div>
+          <div className={styles.try_profession}>
+            Try professional tools for free
+          </div>
+          <div className={styles.title}>
+            Building your&nbsp;
+            <span>Branded</span>&nbsp;
+            <span>eCommerce</span>&nbsp;
+            <span>Experience</span>&nbsp;
+            today with Xopify!
+          </div>
+          <div className={styles.btn}>
             <Button>Get started</Button>
           </div>
         </div>
