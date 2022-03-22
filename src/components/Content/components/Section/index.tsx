@@ -70,7 +70,7 @@ export default function SectionHome() {
         <Button>Try our tools for free</Button>
       </div>
       <div className={styles.group_img}>
-        <Image src={img2} alt="" width="1340" height="800" />
+        <Image src={img2} alt="" width="1340" height="800" objectFit="cover" />
       </div>
     </div>
   )

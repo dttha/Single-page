@@ -178,3 +178,143 @@
   margin-top: -20px;
   margin-right: 310px;
 }
+
+@media (max-width: 1700px) {
+  .wrap_content_title {
+    margin-left: 115px;
+  }
+  .wrap_text {
+    width: 75%;
+    margin-left: 80px;
+  }
+  .wrap_image {
+    margin: 132px 115px 0;
+  }
+  .form {
+    left: 955px;
+    right: 100px;
+  }
+  .powerful {
+    width: 80%;
+    padding-top: 130px;
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 1642px) {
+  .wrap_image {
+    margin: 100px 80px 0;
+  }
+  .wrap_content_title {
+    margin-left: 280px;
+    padding-top: 100px;
+  }
+
+  .wrap_text {
+    width: 70%;
+    display: inline;
+    margin-left: 100px;
+  }
+
+  .form {
+    left: 850px;
+    right: 150px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .wrap_content_title {
+    margin-left: 80px;
+  }
+
+  .form {
+    top: 30px;
+    left: 750px;
+    right: 150px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .wrap_image {
+    margin: 80px 80px 0;
+  }
+
+  .form {
+    top: 20px;
+    left: 750px;
+    right: 80px;
+  }
+}
+
+@media (max-width: 1352px) {
+  .form {
+    top: 10px;
+    left: 650px;
+  }
+  .form_box {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1235px) {
+  .form {
+    top: 15px;
+    left: 600px;
+  }
+  .form_box2 {
+    height: 200px;
+  }
+}
+
+@media (max-width: 1198px) {
+  .form {
+    top: 15px;
+    left: 600px;
+    right: 50px;
+  }
+  .form_box2 {
+    height: 200px;
+  }
+  .form_field {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrap_first {
+    display: none;
+  }
+  .wrap_content_title {
+    display: block;
+    margin: 0 30px;
+    padding-top: 80px;
+  }
+  .wrap_text {
+    width: 100%;
+    display: inline;
+  }
+  .powerful {
+    padding-top: 80px;
+    margin: 0 30px;
+  }
+  .title {
+    font-size: 43px;
+    line-height: 55px;
+  }
+  .description {
+    max-width: 100%;
+  }
+  .powerful .description {
+    max-width: 100%;
+  }
+  .group_img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -280px;
+  }
+  .btn {
+    padding-top: 280px;
+    margin: 0 30px;
+    max-width: 100%;
+  }
+}
