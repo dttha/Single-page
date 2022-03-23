@@ -10,6 +10,7 @@ import styles from '../../../src/components/Footer/footer.module.css'
 export default function Footer() {
   return (
     <div className={styles.footer}>
+      <div className={styles.background_linear}></div>
       <div className={styles.background_image}>
         <div className={styles.wrap_content_footer}>
           <div className={styles.try_profession}>
@@ -17,9 +18,9 @@ export default function Footer() {
           </div>
           <div className={styles.title}>
             Building your&nbsp;
-            <span>Branded</span>&nbsp;
-            <span>eCommerce</span>&nbsp;
-            <span>Experience</span>&nbsp;
+            <span>Branded&nbsp;</span>
+            <span>eCommerce&nbsp;</span>
+            <span>Experience&nbsp;</span>
             today with Xopify!
           </div>
           <div className={styles.btn}>
