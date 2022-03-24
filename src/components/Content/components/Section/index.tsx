@@ -117,6 +117,11 @@ export default function SectionHome() {
             Consistent across devices
           </div>
         </div>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className={styles.btn2}>
+            <Button>Create your website</Button>
+          </div>
+        </div>
       </div>
     </div>
   )
