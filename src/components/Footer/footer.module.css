@@ -161,6 +161,10 @@
   margin-top: 64px;
 }
 
+.try_it {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .fontWhite {
     font-size: 45px;
@@ -288,5 +292,14 @@
       rgba(33, 41, 136, 0.0001) 30.6%,
       #13157f 66.3%
     );
+  }
+  .try_it {
+    display: block;
+    font-family: "Manrope";
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    opacity: 0.6;
+    margin-top: 10px;
   }
 }

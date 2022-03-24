@@ -9,6 +9,7 @@ import bitmap from "../../../../../public/Group 26.png"
 import bitmap2 from "../../../../../public/Bitmap Copy 6.png"
 import arrow from "../../../../../public/Group 6 arrow.png"
 import arrow2 from "../../../../../public/Group 6 Copy.png"
+import img5 from "../../../../../public/people working2.png"
 import Button from "../../../Button";
 import styles from './section.module.css';
 
@@ -34,7 +35,13 @@ export default function SectionHome() {
         </div>
       </div>
       <div className={styles.wrap_image}>
-        <Image src={img} alt="people working image" width="1454" height="710" />
+        <div className={styles.img_pc}>
+          <Image src={img} alt="people working image" width="1454" height="710" />
+        </div>
+        <div className={styles.img_mobile}>
+          <Image src={img5} alt="people working image" width="326" height="506" objectFit="cover" objectPosition="top" />
+        </div>
+        <div className={styles.background_linear}></div>
         <div className={styles.form}>
           <div className={styles.content_suggestion}>
             <Image src={fill1} alt="" width="45" height="47" />
@@ -49,10 +56,12 @@ export default function SectionHome() {
           <div className={styles.form_input}>
             <div className={styles.form_input_icon}></div>
             <div className={styles.form_box2}>
-              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "75%" }}>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "75%", flexDirection: "column" }}>
                 <Image src={img3} alt="" width="100" height="88" />
               </div>
-              <div className={styles.form_field}>Add image <span>(file size should lower than 1kb)</span></div>
+              <div>
+                <div className={styles.form_field}>Add image <span>(file size should lower than 1kb)</span></div>
+              </div>
             </div>
           </div>
           <div style={{ position: "relative" }}>

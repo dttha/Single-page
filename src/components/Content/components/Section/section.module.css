@@ -71,6 +71,10 @@
   position: relative;
 }
 
+.img_mobile {
+  display: none;
+}
+
 .form {
   position: absolute;
   top: 90px;
@@ -78,6 +82,7 @@
   max-width: 100%;
   right: 152px;
   bottom: 144px;
+  z-index: 10;
 }
 
 .content_suggestion {
@@ -392,20 +397,23 @@
   .form {
     top: 30px;
   }
-  .content_suggestion {
-    display: none;
+  .form_box2 {
+    height: 222px;
   }
-  .img4 {
-    display: none;
-  }
-  .form_text {
-    display: none;
+  .form_box {
+    height: 90px;
   }
 }
 
 @media (max-width: 992px) {
+  .form {
+    top: 40%;
+  }
   .wrap_image {
     width: 700px;
+    max-width: 100%;
+    height: 800px;
+    max-height: 100%;
   }
   .wrap_first {
     display: none;
@@ -414,6 +422,27 @@
     display: block;
     margin: 0 100px;
     padding-top: 100px;
+  }
+  .img_pc {
+    display: none;
+  }
+  .img_mobile {
+    display: block;
+    cursor: pointer;
+  }
+  .background_linear {
+    position: absolute;
+    width: 100%;
+    height: 870px;
+    margin-top: -77%;
+    left: 0px;
+    z-index: 2;
+    background: linear-gradient(
+      180deg,
+      rgba(19, 21, 127, 0.0001) 41.4%,
+      #13157f 61.72%
+    );
+    border-radius: 15px;
   }
 }
 
@@ -435,6 +464,13 @@
   }
   .websitePerformance {
     margin-left: 53%;
+  }
+  .wrap_image {
+    width: 576px;
+  }
+  .background_linear {
+    height: 833px;
+    margin-top: -89%;
   }
 }
 
@@ -491,6 +527,27 @@
   .arrow4 .suggestion2 {
     font-size: 16px;
   }
+  .wrap_image {
+    width: 450px;
+  }
+  .background_linear {
+    height: 857px;
+    margin-top: -130%;
+  }
+  .form {
+    right: 33px;
+    width: 269px;
+  }
+  .form_box2 .form_field {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .background_linear {
+    height: 920px;
+    margin-top: -173%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -513,5 +570,33 @@
   }
   .btn2 {
     width: 270px;
+  }
+  .wrap_image {
+    width: 326px;
+    height: 650px;
+  }
+  .background_linear {
+    height: 420px;
+    margin-top: -95%;
+  }
+  .form {
+    top: 30%;
+    left: 23%;
+    width: 240px;
+  }
+  .form_text {
+    font-size: 14px;
+  }
+  .form_box {
+    height: 85px;
+  }
+  .form_box2 {
+    height: 185px;
+  }
+  .form_field {
+    margin-left: 14px;
+  }
+  .form_box2 .form_field {
+    margin-top: -15px;
   }
 }

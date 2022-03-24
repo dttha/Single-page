@@ -23,6 +23,9 @@ export default function Footer() {
             <span>Experience&nbsp;</span>
             today with Xopify!
           </div>
+          <div className={styles.try_it}>
+            Try it for free and create a meaningful connection with your audiences with our professionally designed tools!
+          </div>
           <div className={styles.btn}>
             <Button>Get started</Button>
           </div>
