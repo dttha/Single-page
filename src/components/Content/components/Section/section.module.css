@@ -48,6 +48,7 @@
 
 .wrap_text span {
   color: #15bcaf;
+  font-size: 60px;
   font-family: "Source Serif Pro";
   display: inline-block !important;
 }
@@ -69,6 +70,7 @@
   border-radius: 16px;
   cursor: pointer;
   position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .img_mobile {
@@ -152,6 +154,7 @@
 .powerful span {
   font-family: "Source Serif Pro";
   color: #15bcaf;
+  font-size: 60px;
   display: inline-block !important;
 }
 

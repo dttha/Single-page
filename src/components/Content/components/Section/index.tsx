@@ -34,7 +34,7 @@ export default function SectionHome() {
           </div>
         </div>
       </div>
-      <div className={styles.wrap_image}>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" className={styles.wrap_image}>
         <div className={styles.img_pc}>
           <Image src={img} alt="people working image" width="1454" height="710" />
         </div>
@@ -74,7 +74,8 @@ export default function SectionHome() {
           </div>
         </div>
       </div>
-      <div className={styles.powerful}>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center"
+        className={styles.powerful}>
         <div className={styles.title}>
           Powerful technology for&nbsp;<span>powerful story/&nbsp;</span>brand
         </div>
@@ -82,29 +83,63 @@ export default function SectionHome() {
           Our powerful tools are designed with advanced development languages that helps optimize any brand experience to work faster and consistently across any devices
         </div>
       </div>
-      <div className={styles.btn}>
+      <div
+        data-aos="fade-up"
+        className={styles.btn}>
         <Button>Try our tools for free</Button>
       </div>
       <div className={styles.group}>
-        <div className={styles.websitePerformance}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-easing="linear"
+          data-aos-anchor-placement="bottom-bottom"
+          className={styles.websitePerformance}>
           <Image src={websitePerformance} alt="" width="267" height="142" objectFit="cover" />
         </div>
-        <div className={styles.bitmap}>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-anchor-placement="bottom-bottom"
+          className={styles.bitmap}>
           <Image src={bitmap} alt="" width="288" height="263" objectFit="cover" />
         </div>
-        <div className={styles.bitmap2}>
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease-out-sine"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
+          data-aos-anchor-placement="center-left"
+          className={styles.bitmap2}>
           <Image src={bitmap2} alt="" width="265" height="263" objectFit="cover" />
         </div>
-        <div className={styles.group_img}>
+        <div
+          data-aos="zoom-in-up"
+          className={styles.group_img}>
           <Image src={img2} alt="" width="927" height="568" objectFit="cover" />
         </div>
-        <div className={styles.arrow}>
+        <div
+          data-aos="fade-left"
+          data-aos-easing="ease-out-sine"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-left"
+          data-aos-delay="1500"
+          className={styles.arrow}>
           <Image src={arrow} alt="" width="45" height="35" objectFit="cover" />
           <div className={styles.suggestion1}>
             Tool Booking
           </div>
         </div>
-        <div className={styles.arrow2}>
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-out-sine"
+          data-aos-duration="1000"
+          data-aos-delay="1500"
+          data-aos-anchor-placement="center-right"
+          className={styles.arrow2}>
           <Image src={arrow2} alt="" width="45" height="35" objectFit="cover" />
           <div className={styles.suggestion2}>
             Consistent across devices
