@@ -87,7 +87,7 @@
 
 .background_image {
   background-size: cover;
-  background-image: url("../../../public/banner\ 4_3.png");
+  background-image: url("../../../public/Group\ 5501.png");
   background-repeat: no-repeat;
   background-position-x: center;
 }
@@ -223,6 +223,9 @@
   .title {
     font-size: 33px;
     line-height: 35px;
+  }
+  .title span {
+    font-size: 31px;
   }
 }
 

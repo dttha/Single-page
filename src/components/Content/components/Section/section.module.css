@@ -84,7 +84,7 @@
   max-width: 100%;
   right: 152px;
   bottom: 144px;
-  z-index: 10;
+  z-index: 8;
 }
 
 .content_suggestion {
@@ -167,7 +167,7 @@
   margin-left: 274px;
   max-width: 270px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .btn2 {
@@ -179,6 +179,14 @@
   padding-bottom: 110px;
 }
 
+.hidden_group {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 .websitePerformance {
   width: 267px;
   max-width: 100%;
@@ -186,6 +194,84 @@
   position: absolute;
   margin-top: -236px;
   margin-left: calc(100% - 880px);
+  animation: move_center_top 2s;
+}
+
+@keyframes move_center_top {
+  0% {
+    opacity: 0;
+    margin-top: -60px;
+    margin-left: calc(100% - 986px);
+    z-index: 24;
+  }
+  30% {
+    opacity: 0;
+    margin-top: -60px;
+    margin-left: calc(100% - 986px);
+    z-index: 24;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -236px;
+    margin-left: calc(100% - 880px);
+  }
+}
+
+@keyframes move_center_top_1700px {
+  0% {
+    opacity: 0;
+    margin-left: 59%;
+    margin-top: -43px;
+    z-index: 9;
+  }
+  30% {
+    opacity: 0;
+    margin-left: 59%;
+    margin-top: -43px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 65%;
+    margin-top: -185px;
+  }
+}
+
+@keyframes move_center_top_730px {
+  0% {
+    opacity: 0;
+    margin-left: 50%;
+    margin-top: -60px;
+    z-index: 9;
+  }
+  30% {
+    opacity: 0;
+    margin-left: 50%;
+    margin-top: -60px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 53%;
+    margin-top: -185px;
+  }
+}
+
+@keyframes move_center_top_552px {
+  0% {
+    opacity: 0;
+    margin-left: 50%;
+    margin-top: -60px;
+    z-index: 9;
+  }
+  30% {
+    opacity: 0;
+    margin-left: 50%;
+    margin-top: -60px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 53%;
+    margin-top: -135px;
+  }
 }
 
 .bitmap {
@@ -194,6 +280,27 @@
   margin-left: calc(100% - 530px);
   margin-top: -200px;
   position: absolute;
+  animation: move_right_top 2s;
+}
+
+@keyframes move_right_top {
+  0% {
+    opacity: 0;
+    margin-left: calc(100% - 825px);
+    margin-top: -38px;
+    z-index: 23;
+  }
+  50% {
+    opacity: 0;
+    margin-left: calc(100% - 825px);
+    margin-top: -38px;
+    z-index: 23;
+  }
+  100% {
+    opacity: 1;
+    margin-left: calc(100% - 530px);
+    margin-top: -200px;
+  }
 }
 
 .bitmap2 {
@@ -203,6 +310,64 @@
   margin-top: 45px;
   position: absolute;
   z-index: 9;
+  animation: move_center_left 2s;
+}
+
+@keyframes move_center_left {
+  from {
+    opacity: 0;
+    margin-left: 32%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 20%;
+  }
+}
+
+@keyframes move_center_left_1700px {
+  from {
+    opacity: 0;
+    margin-left: 32%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 16%;
+  }
+}
+
+@keyframes move_center_left_1480px {
+  from {
+    opacity: 0;
+    margin-left: 32%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 12%;
+  }
+}
+
+@keyframes move_center_left_1380px {
+  from {
+    opacity: 0;
+    margin-left: 32%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 7%;
+  }
+}
+
+@keyframes move_center_left_552px {
+  from {
+    opacity: 0;
+    margin-top: 45px;
+    margin-left: 32%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 1%;
+    margin-top: -85px;
+  }
 }
 
 .group_img {
@@ -274,6 +439,7 @@
   margin-left: 23%;
   margin-top: -600px;
   position: absolute;
+  z-index: 10;
 }
 
 .arrow4 {
@@ -300,18 +466,20 @@
   .websitePerformance {
     margin-left: 65%;
     margin-top: -185px;
+    animation: move_center_top_1700px 2s;
   }
   .bitmap {
     display: none;
   }
   .bitmap2 {
     margin-left: 16%;
+    animation: move_center_left_1700px 2s;
   }
   .arrow {
     margin-left: 23%;
   }
   .arrow2 {
-    margin-right: 20%;
+    margin-right: 18%;
   }
   .btn {
     display: none;
@@ -322,7 +490,7 @@
     width: 360px;
     max-width: 100%;
     position: relative;
-    z-index: 10;
+    z-index: 8;
   }
 }
 
@@ -375,6 +543,7 @@
   }
   .bitmap2 {
     margin-left: 12%;
+    animation: move_center_left_1480px 2s;
   }
   .wrap_image {
     width: 1100px;
@@ -390,6 +559,7 @@
   .bitmap2 {
     margin-left: 7%;
     margin-top: -110px;
+    animation: move_center_left_1380px 2s;
   }
   .wrap_image {
     width: 1000px;
@@ -467,6 +637,7 @@
   }
   .websitePerformance {
     margin-left: 53%;
+    animation: move_center_top_730px 2s;
   }
   .wrap_image {
     width: 576px;
@@ -508,11 +679,13 @@
     width: 170px;
     margin-left: 53%;
     margin-top: -135px;
+    animation: move_center_top_552px 2s;
   }
   .bitmap2 {
     width: 160px;
     margin-left: 1%;
     margin-top: -85px;
+    animation: move_center_left_552px 2s;
   }
   .arrow3 {
     margin-top: -89%;
