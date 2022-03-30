@@ -8,14 +8,13 @@ import styles from '../../components/HeaderBlog/headerBlog.module.css'
 export default function NavItem(props: INavItem) {
   return (
     <li className={`${styles.menu_item} ${props.className}`}>
-      <div className={styles.link + " flex align-items-center"}>
-        <div>{props.title}</div>
+      <div className="flex align-items-center">
+        <div className={styles.link}>
+          <Link href={props.href}>{props.title}</Link>
+        </div>
         {props.subMenu &&
           <>
-            <div className={styles.wrap_icon}>
-              <div className={styles.icon_fake_arrow}></div>
-              <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
-            </div>
+            <FontAwesomeIcon className={styles.font_icon_down} icon={faChevronDown} />
             <div className={styles.sub_menu}>
               {props.subMenu.map((i, index) => {
                 return <div className={`${styles.menu_item} ${i.className}`} key={index}>

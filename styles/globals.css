@@ -30,12 +30,6 @@ body {
   src: url("../fonts/AvenirNextLTPro/AvenirNextLTPro-Medium.otf");
 }
 
-/* svg {
-  border: 3px solid #eee;
-  display: block;
-  margin: 1em auto;
-} */
-
 a {
   color: inherit;
   text-decoration: none;
@@ -193,12 +187,14 @@ span {
     padding-top: 25px;
   }
 }
-.cls-1 {
-  fill: none;
+
+.line_svg {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 5000;
+  animation: dash 5s linear alternate infinite;
 }
-.cls-2 {
-  clip-path: url(#clip-path);
-}
-.cls-3 {
-  clip-path: url(#clip-path-2);
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

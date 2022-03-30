@@ -37,7 +37,7 @@ export const MENU: INavItem[] = [
   },
   {
     title: 'Theme gallery',
-    href: '/theme-gallery'
+    href: '/gallery'
   },
   {
     title: 'Blog',

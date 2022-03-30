@@ -64,7 +64,6 @@
 .menu_item:hover {
   color: #15bcaf;
   transition: all 0.5s;
-  transform: translateY(4px);
 }
 
 .sub_menu {
@@ -97,6 +96,16 @@
   transition: 0.5s;
 }
 
+.menu_item a {
+  color: #fff;
+  text-decoration: unset;
+}
+
+.menu_item:hover a {
+  color: #15bcaf;
+  transition: 0.5s;
+}
+
 .sub_menu .menu_item:not(:last-child) {
   border-bottom: 1px solid #bbb;
 }
@@ -107,27 +116,15 @@
 }
 
 .menu_item:hover .font_icon_down {
-  transform: rotateZ(-90deg) translateX(-5.25px) translateY(10px);
+  color: #15bcaf;
+  transform: rotateZ(-90deg) translateX(-5.25px);
   transform-origin: center;
   position: relative;
+  transition: 0.2s;
 }
 
-.menu_item .icon_fake_arrow {
-  width: 15px;
-  height: 1.5px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(50%);
-  right: 10px;
-  background-color: #15bcaf;
-  z-index: 20;
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-.menu_item:hover .icon_fake_arrow {
-  opacity: 1;
-  right: -3px;
+.menu_item:hover .wrap_icon {
+  transition: 0;
 }
 
 .btn_menu {

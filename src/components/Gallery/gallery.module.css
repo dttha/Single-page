@@ -1,0 +1,297 @@
+.section1 {
+  background: #072ac8;
+}
+
+.section1_container {
+  padding-top: 180px;
+  padding-bottom: 168px;
+  max-width: 100%;
+  margin: 0 233px;
+}
+
+.section1_title {
+  margin-bottom: 103px;
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  width: 50%;
+}
+
+.section1_title span {
+  font-family: "Source Serif Pro";
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -0.5px;
+  color: #15bcaf;
+  display: inline-block !important;
+}
+
+.section1_key {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 46px;
+}
+
+.section1_block {
+  position: relative;
+  background: #082fe0;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.section1_inside_block {
+  padding: 40px;
+}
+
+.section1_inside_block_img {
+  width: 54px;
+  max-width: 100%;
+}
+
+.section1_inside_block_content {
+  margin-top: 95px;
+}
+
+.line {
+  margin-top: 85px;
+  margin-bottom: 66px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.section1_block2 {
+  margin-top: 51px;
+}
+
+.section1_block_other_features_title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.section1_block_other_features_des {
+  margin-top: 8px;
+  font-family: "Manrope";
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section2 {
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section2_container {
+  padding-top: 110px;
+  margin-left: 146px;
+  width: 34%;
+}
+
+.section2_background {
+  flex: 1;
+  object-fit: contain;
+}
+
+.section2_title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  margin-left: 85px;
+  margin-bottom: 48px;
+}
+
+.section2_block {
+  margin-top: 48px;
+  margin-bottom: 51px;
+  display: flex;
+  flex-direction: row;
+}
+
+.section2_block_des {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.228571px;
+  color: #13157f;
+  flex: 1;
+  margin-left: 24px;
+  margin-top: -8px;
+}
+
+.section2_block2 {
+  margin-top: 51px;
+  margin-left: 85px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.section2_block_img {
+  width: 52px;
+  max-width: 100%;
+  margin-right: 21px;
+}
+
+.section2_block3 {
+  margin-left: 85px;
+  margin-bottom: 104px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rectangle1 {
+  width: 34px;
+  height: 6px;
+  background: #13157f;
+  border-radius: 20px;
+}
+
+.rectangle2 {
+  margin-left: 3px;
+  width: 16px;
+  height: 6px;
+  background: #e8e8e8;
+  border-radius: 20px;
+}
+
+.section3 {
+  background: #f2f2f2;
+}
+
+.section3_container {
+  padding: 160px 231px 130px;
+}
+
+.section3_container_block1 {
+  padding: 0 60px 140px;
+}
+
+.section3_block1_des {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.5px;
+  color: #13157f;
+  margin-top: 30px;
+  width: 34%;
+}
+
+.section3_block1_des span {
+  display: inline-block !important;
+  font-family: "Source Serif Pro";
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #15bcaf;
+  margin-top: 30px;
+}
+
+.section3_block_box {
+  min-height: 100%;
+  background: #ffffff;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.section3_block_box_container {
+  padding: 33px 0;
+  margin: 0 39px;
+}
+
+.line2 {
+  margin-top: 17px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section3_text {
+  font-family: "Manrope";
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section3_container_block2 {
+  background: #0086ff;
+  border-radius: 20px;
+  margin-top: 141px;
+}
+
+.section3_container_block2_content {
+  padding-top: 110px;
+  margin-left: 94px;
+  max-width: 35%;
+}
+
+.section3_container_block2_img {
+  flex: 1;
+}
+
+.section3_container_block2_title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section3_container_block2_question {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  margin-top: 10px;
+  width: 65%;
+}
+
+.section3_container_block2_des {
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 22px;
+  margin-bottom: 42px;
+  width: 65%;
+}
+
+.section3_container_block3 {
+  padding-top: 120px;
+  margin: 0 342px;
+}
+
+.section3_container_block3_title {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #13157f;
+  text-align: center;
+}

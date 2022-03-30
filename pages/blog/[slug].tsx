@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import HeaderBlog from '../../src/components/HeaderBlog';
 import ContextFooter from '../../src/components/Footer/components/footer';
@@ -70,7 +69,6 @@ export async function getStaticPaths() {
       params: { slug: item.slug },
     }
   })
-  console.log("🚀 ~ file: [slug].tsx ~ line 66 ~ paths ~ paths", paths)
 
   return {
     paths,
