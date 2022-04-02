@@ -5,7 +5,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import Link from 'next/link';
 import styles from '../contentBlog.module.css'
 import SwipeableViews from "react-swipeable-views";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export async function getStaticProps() {
@@ -36,18 +36,35 @@ export async function getStaticProps() {
 
 export default function Section1({ posts }: { posts: any }) {
   const { TabPane } = Tabs;
-  // const pageSize = 15;
-  // const [minValue, setMinValue] = useState(0);
-  // const [maxValue, setMaxValue] = useState(0);
+  const pageSize = 15;
+  const [pagination, setPagination] = useState({
+    current: 1,
+    min: 0,
+    limit: 0,
+    totalPage: 0
+  })
+
+  const [filter, setFilter] = useState({
+    // page: 1,
+    min: 0,
+    limit: pageSize,
+    totalPage: posts.length / pageSize
+  })
 
   function callback(key: any) {
     console.log(key);
   }
-  // function handleChange(value: any) {
-  //   current: value
-  //   minValue: (value - 1) * pageSize
-  //   maxValue: value * pageSize
-  // }
+
+  function handleChange(page: any) {
+    current: page
+    min: (page - 1) * pageSize
+    limit: page * pageSize
+  }
+
+  useEffect(() => {
+    setPagination(pagination)
+  }, [filter])
+
   return (
     <div className={styles.wrap_tabs}>
       <Tabs defaultActiveKey="1" onChange={callback}>
@@ -89,10 +106,11 @@ export default function Section1({ posts }: { posts: any }) {
       <div className={styles.tab_line}></div>
       <div style={{ paddingTop: "18px", paddingBottom: "75px" }}>
         <Pagination
-          // showSizeChanger
-          // onChange={handleChange}
-          defaultCurrent={2}
-          total={500}
+          // pageSize={itemsPerPage}
+          // current={}
+          onChange={handleChange}
+          defaultCurrent={1}
+          total={posts.length}
         />
       </div>
     </div>
