@@ -43,9 +43,16 @@
 
 .section1_block {
   position: relative;
+  background: #072ac8;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-sizing: border-box;
+  border-radius: 15px;
+  min-height: 100%;
+}
+
+.section1_block:hover {
   background: #082fe0;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 15px;
 }
 
 .section1_inside_block {
@@ -158,6 +165,10 @@
   flex-direction: row;
 }
 
+.section2_background_img {
+  object-fit: cover;
+}
+
 .rectangle1 {
   width: 34px;
   height: 6px;
@@ -210,14 +221,30 @@
 
 .section3_block_box {
   min-height: 100%;
+  border-radius: 10px;
+  background: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.section3_block_box:hover {
   background: #ffffff;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
 }
 
 .section3_block_box_container {
   padding: 33px 0;
   margin: 0 39px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-top: 12px;
 }
 
 .line2 {
@@ -294,4 +321,41 @@
   letter-spacing: -0.5px;
   color: #13157f;
   text-align: center;
+}
+
+.section3_container_block3_dropdown {
+  margin-top: 40px;
+}
+
+.section3_container_block3_line {
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.section3_container_block3_wrap_dropdown_item {
+  margin: 22px 0;
+}
+
+.section3_container_block3_dropdown_item {
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.section3_container_block3_dropdown_item_content_show {
+  font-family: "Manrope";
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 6px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.wrap_title_dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

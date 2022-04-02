@@ -4,11 +4,14 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import 'antd/dist/antd.css';
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 config.autoAddCss = false
-
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({

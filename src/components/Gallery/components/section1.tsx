@@ -37,7 +37,7 @@ export default function Section1() {
             </div>
           </Col>
           <Col span={6}>
-            <div className={styles.section1_block} style={{ background: "#072AC8", border: "1px solid rgba(255, 255, 255, 0.07)", boxSizing: "border-box" }}>
+            <div className={styles.section1_block} >
               <div className={styles.section1_inside_block}>
                 <div className={styles.section1_inside_block_img}>
                   <Image src={img2} height="54" width="54" alt="vector"></Image>
@@ -54,7 +54,7 @@ export default function Section1() {
             </div>
           </Col>
           <Col span={6}>
-            <div className={styles.section1_block} style={{ background: "#072AC8", border: "1px solid rgba(255, 255, 255, 0.07)", boxSizing: "border-box" }}>
+            <div className={styles.section1_block} >
               <div className={styles.section1_inside_block}>
                 <div className={styles.section1_inside_block_img}>
                   <Image src={img3} height="54" width="54" alt="vector"></Image>
@@ -71,7 +71,7 @@ export default function Section1() {
             </div>
           </Col>
           <Col span={6}>
-            <div className={styles.section1_block} style={{ background: "#072AC8", border: "1px solid rgba(255, 255, 255, 0.07)", boxSizing: "border-box" }}>
+            <div className={styles.section1_block} >
               <div className={styles.section1_inside_block}>
                 <div className={styles.section1_inside_block_img}>
                   <Image src={img4} height="54" width="54" alt="vector"></Image>

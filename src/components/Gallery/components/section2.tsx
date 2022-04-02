@@ -24,7 +24,7 @@ export default function Section2() {
         </div>
         <div className={styles.section2_block2}>
           <div className={styles.section2_block_img}>
-            <Image src={img2} alt="" width="52" height="52"></Image>
+            <Image src={img2} alt="" width="52" height="52" ></Image>
           </div>
           <div>
             <div style={{ fontFamily: "Manrope", fontSize: "16px", lineHeight: "22px", fontWeight: "700", color: "#13157f" }}>Reese Hammerson</div>
@@ -38,7 +38,7 @@ export default function Section2() {
         </div>
       </div>
       <div className={styles.section2_background}>
-        <Image src={img} alt="" width="100%" height="100%" objectPosition="absolute"></Image>
+        <Image className={styles.section2_background_img} src={img} alt="" width="100%"></Image>
       </div>
     </div>
   )

@@ -1,25 +1,25 @@
 import Image from "next/image";
-import fill1 from "../../../../../public/Group 6.png"
-import img from "../../../../../public/people working.png"
-import img2 from "../../../../../public/Group 5484.png"
-import img3 from "../../../../../public/16410.png"
-import img4 from "../../../../../public/Group 7.png"
-import websitePerformance from "../../../../../public/Group 2.png"
-import bitmap from "../../../../../public/Group 26.png"
-import bitmap2 from "../../../../../public/Bitmap Copy 6.png"
-import arrow from "../../../../../public/Group 6 arrow.png"
-import arrow2 from "../../../../../public/Group 6 Copy.png"
-import img5 from "../../../../../public/people working2.png"
-import Button from "../../../Button";
+import fill1 from "../../../../public/Group 6.png"
+import img from "../../../../public/people working.png"
+import img2 from "../../../../public/Group 5484.png"
+import img3 from "../../../../public/16410.png"
+import img4 from "../../../../public/Group 7.png"
+import websitePerformance from "../../../../public/Group 2.png"
+import bitmap from "../../../../public/Group 26.png"
+import bitmap2 from "../../../../public/Bitmap Copy 6.png"
+import arrow from "../../../../public/Group 6 arrow.png"
+import arrow2 from "../../../../public/Group 6 Copy.png"
+import img5 from "../../../../public/people working2.png"
+import Button from "../../../components/Button/index";
 import anime from 'animejs';
-import { useEffect, useState } from "react";
-import styles from './section.module.css';
+import styles from './section1.module.css';
+import { useEffect } from "react";
 
-export default function SectionHome() {
+export default function Section1() {
   useEffect(() => {
     const group = document.getElementById("group") as HTMLElement;
     const groupImg = document.getElementById("group-img") as HTMLElement;
-    const a = groupImg?.getBoundingClientRect();
+    const a = groupImg.getBoundingClientRect();
     if (a) {
       if (window.innerHeight > a.top + 100) {
         group?.classList.add(styles["active"])
@@ -43,8 +43,14 @@ export default function SectionHome() {
       direction: 'alternate',
       loop: true
     });
+    // anime({
+    //   targets: `.${styles["wrap_first"]}`,
+    //   translateX: [100, 250], // from 100 to 250
+    //   delay: 500,
+    //   direction: 'alternate',
+    //   loop: false
+    // });
   }, [])
-
   return (
     <div className={styles.wrap_section}>
       <div className={styles.wrap_content_title}>

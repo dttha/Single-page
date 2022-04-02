@@ -1,11 +1,23 @@
 import { Col, Row } from 'antd'
+import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons'
 import Button from '../../Button'
 import img from "../../../../public/asia-businesswoman-social-distancing-new-normal-situation-virus-prevention-while-using-laptop-presentation-colleagues-about-plan-video-call-while-work-office-life-after-corona-virus 1.png"
 import styles from '../../../../src/components/Gallery/gallery.module.css'
-import Image from 'next/image'
+import { useState } from 'react'
 
 
 export default function Section3() {
+  const [indexExpand, setIndexExpand] = useState(-1);
+  const onToggleClick = function (index: number) {
+    if (index != indexExpand) {
+      setIndexExpand(index)
+    } else {
+      setIndexExpand(-1)
+    }
+  }
+
   return (
     <div className={styles.section3}>
       <div className={styles.section3_container}>
@@ -35,14 +47,14 @@ export default function Section3() {
                 </div>
                 <div className={styles.line2}></div>
                 <div className={styles.section3_text}>
-                  <span>Maximum upload: 12 images</span>
-                  <span>Gallery types: Grid, Masonry, Justified, Stack</span>
+                  <div><div className={styles.dot}></div>Maximum upload: 12 images</div>
+                  <div><div className={styles.dot}></div>Gallery types: Grid, Masonry, Justified, Stack</div>
                 </div>
               </div>
             </div>
           </Col>
           <Col span={8}>
-            <div className={styles.section3_block_box} style={{ background: "#f2f2f2", border: "1px solid rgba(0, 0, 0, 0.1)", boxSizing: "border-box" }}>
+            <div className={styles.section3_block_box} >
               <div className={styles.section3_block_box_container}>
                 <div style={{ fontFamily: "Manrope", fontSize: "20px", lineHeight: "26px", fontWeight: "600", textAlign: "center", letterSpacing: "1px", textTransform: "uppercase", color: "rgba(0, 0, 0, 0.4)" }}>
                   Basic
@@ -52,16 +64,16 @@ export default function Section3() {
                 </div>
                 <div className={styles.line2}></div>
                 <div className={styles.section3_text}>
-                  <span> Unlimited images</span>
-                  <span>Unlimited galleries</span>
-                  <span>All gallery types </span>
-                  <span>Multiple languages </span>
+                  <div><div className={styles.dot}></div>Unlimited images</div>
+                  <div><div className={styles.dot}></div>Unlimited galleries</div>
+                  <div><div className={styles.dot}></div>All gallery types </div>
+                  <div><div className={styles.dot}></div>Multiple languages </div>
                 </div>
               </div>
             </div>
           </Col>
           <Col span={8}>
-            <div className={styles.section3_block_box} style={{ background: "#f2f2f2", border: "1px solid rgba(0, 0, 0, 0.1)", boxSizing: "border-box" }}>
+            <div className={styles.section3_block_box}>
               <div className={styles.section3_block_box_container}>
                 <div style={{ fontFamily: "Manrope", fontSize: "20px", lineHeight: "26px", fontWeight: "600", textAlign: "center", letterSpacing: "1px", textTransform: "uppercase", color: "rgba(0, 0, 0, 0.4)" }}>
                   Pro
@@ -71,12 +83,12 @@ export default function Section3() {
                 </div>
                 <div className={styles.line2}></div>
                 <div className={styles.section3_text}>
-                  <span>Unlimited images</span>
-                  <span>Tag products/links to images (hotspot)</span>
-                  <span>Unlimited galleries</span>
-                  <span>All gallery types</span>
-                  <span>Unlimited albums</span>
-                  <span>Multiple languages</span>
+                  <div><div className={styles.dot}></div>Unlimited images</div>
+                  <div><div className={styles.dot}></div>Tag products/links to images (hotspot)</div>
+                  <div><div className={styles.dot}></div>Unlimited galleries</div>
+                  <div><div className={styles.dot}></div>All gallery types</div>
+                  <div><div className={styles.dot}></div>Unlimited albums</div>
+                  <div><div className={styles.dot}></div>Multiple languages</div>
                 </div>
               </div>
             </div>
@@ -105,13 +117,56 @@ export default function Section3() {
               </div>
             </div>
             <div className={styles.section3_container_block2_img}>
-              <Image src={img} alt="" width="100%" height="100%"></Image>
+              <Image src={img} alt="" width="100%" quality={100} objectFit="cover"></Image>
             </div>
           </div>
         </div>
         <div className={styles.section3_container_block3}>
           <div className={styles.section3_container_block3_title}>
             Frequently asked questions
+          </div>
+          <div className={styles.section3_container_block3_dropdown}>
+            <div className={styles.section3_container_block3_line}></div>
+            <div className={styles.section3_container_block3_wrap_dropdown_item} onClick={() => { onToggleClick(0) }}>
+              <div className={styles.wrap_title_dropdown}>
+                <div className={styles.section3_container_block3_dropdown_item}>How many galleries can I create using XO Gallery?</div>
+                <FontAwesomeIcon style={{ width: "23px", height: "23px", color: "#C4C4C4" }} className={styles.plus_icon} icon={indexExpand == 0 ? faMinus : faPlus}></FontAwesomeIcon>
+              </div>
+              <div style={{ maxHeight: indexExpand == 0 ? 100 : 0 }} className={styles.section3_container_block3_dropdown_item_content_show}>The number of galleries you can create with XO Gallery is unlimited.</div>
+            </div>
+            <div>
+              <div className={styles.section3_container_block3_line}></div>
+              <div className={styles.section3_container_block3_wrap_dropdown_item} onClick={() => { onToggleClick(1) }}>
+                <div className={styles.wrap_title_dropdown}>
+                  <div className={styles.section3_container_block3_dropdown_item}>Can I try it before purchasing?</div>
+                  <FontAwesomeIcon style={{ width: "23px", height: "23px", color: "#C4C4C4" }} icon={indexExpand == 1 ? faMinus : faPlus}></FontAwesomeIcon>
+                </div>
+                <div style={{ maxHeight: indexExpand == 1 ? 100 : 0 }} className={styles.section3_container_block3_dropdown_item_content_show}>The number of galleries you can create with XO Gallery is unlimited.</div>
+              </div>
+            </div>
+            <div>
+              <div className={styles.section3_container_block3_line}></div>
+              <div className={styles.section3_container_block3_wrap_dropdown_item} onClick={() => { onToggleClick(2) }}>
+                <div className={styles.wrap_title_dropdown}>
+                  <div className={styles.section3_container_block3_dropdown_item}>Does XO Gallery work with my theme?</div>
+                  <FontAwesomeIcon style={{ width: "23px", height: "23px", color: "#C4C4C4" }} icon={indexExpand == 2 ? faMinus : faPlus}></FontAwesomeIcon>
+                </div>
+                <div style={{ maxHeight: indexExpand == 2 ? 100 : 0 }} className={styles.section3_container_block3_dropdown_item_content_show}>The number of galleries you can create with XO Gallery is unlimited.</div>
+              </div>
+            </div>
+            <div>
+              <div className={styles.section3_container_block3_line}></div>
+              <div className={styles.section3_container_block3_wrap_dropdown_item} onClick={() => { onToggleClick(3) }}>
+                <div className={styles.wrap_title_dropdown}>
+                  <div className={styles.section3_container_block3_dropdown_item}>What will happen after my trial ends?</div>
+                  <FontAwesomeIcon style={{ width: "23px", height: "23px", color: "#C4C4C4" }} icon={indexExpand == 3 ? faMinus : faPlus}></FontAwesomeIcon>
+                </div>
+                <div style={{ maxHeight: indexExpand == 3 ? 100 : 0 }} className={styles.section3_container_block3_dropdown_item_content_show}>The number of galleries you can create with XO Gallery is unlimited.</div>
+              </div>
+            </div>
+            <div>
+              <div className={styles.section3_container_block3_line}></div>
+            </div>
           </div>
         </div>
       </div>
