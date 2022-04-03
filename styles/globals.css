@@ -203,6 +203,20 @@ span {
   background: #15BCAF;
 }
 
+.swiper-pagination{
+  display: flex;
+}
+
+.swiper-pagination-bullet-active{
+  background: #fff;
+}
+
+.swiper-pagination-bullet{
+  background: #FFFFFF!important;
+  opacity: 0.3!important;
+}
+
+
 @media (min-width: 1400px) {
   .container {
     margin: 0 37px !important;

@@ -71,11 +71,24 @@
   height: 66px;
   right: 32px;
   top: -17px;
-  z-index: 9999;
+  z-index: 5;
 }
 .slider_wrapper{
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 28px;
+}
+
+@media (max-width: 1700px) {
+  .slider_container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider{
+    display: none;
+  }
 }

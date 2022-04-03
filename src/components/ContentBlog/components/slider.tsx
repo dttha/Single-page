@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import img1 from "../../../../public/Mask group.png"
 import styles from './slider.module.css';
 import Image from 'next/image';
@@ -29,6 +28,20 @@ export default function Slider() {
               swiper.params.navigation.nextEl = navigationNextRef.current;
               swiper.navigation.init();
               swiper.navigation.update();
+            }}
+            breakpoints={{
+              813: {
+                slidesPerView: 3,
+                spaceBetween: 10
+              },
+              1200: {
+                slidesPerView: 4,
+                spaceBetween: 10
+              },
+              1500: {
+                slidesPerView: 5,
+                spaceBetween: 10
+              }
             }}
           >
             <SwiperSlide>

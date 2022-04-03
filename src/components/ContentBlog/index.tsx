@@ -10,14 +10,82 @@ import image7 from '../../../public/unsplash_qCi_MzVODoU.png'
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from "./contentBlog.module.css";
+import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 
 export default function ContentBlog() {
   return (
     <Layout className={styles.wrapper}>
       <div className={styles.content_title}>Latest Updates</div>
       <div className={`flex justify-content-between ${styles.container_blog}`}>
-        <div className={styles.wrap_img_blog}>
+        <Swiper
+          spaceBetween={30}
+          pagination={{
+            dynamicBullets: true,
+          }}
+          modules={[Navigation, Pagination]}
+          className={styles.swiper}
+        >
+          <SwiperSlide>
+            <div className={styles.wrap_img_blog}>
+              <div className={styles.image_blog}>
+                <Image
+                  className={styles.img_blog}
+                  alt="image-blog-1"
+                  src={image1}
+                  width="920"
+                />
+              </div>
+              <div className={styles.wrap_content_img}>
+                <div className={styles.date}>E-commerce tips • 19 January 2020</div>
+                <div className={styles.des}>
+                  Tips and observations on remote working from a remote company.
+                  (Hint: It’s us!)
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.wrap_img_blog}>
+              <div className={styles.image_blog}>
+                <Image
+                  className={styles.img_blog}
+                  alt="image-blog-1"
+                  src={image1}
+                  width="920"
+                />
+              </div>
+              <div className={styles.wrap_content_img}>
+                <div className={styles.date}>E-commerce tips • 19 January 2020</div>
+                <div className={styles.des}>
+                  Tips and observations on remote working from a remote company.
+                  (Hint: It’s us!)
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.wrap_img_blog}>
+              <div className={styles.image_blog}>
+                <Image
+                  className={styles.img_blog}
+                  alt="image-blog-1"
+                  src={image1}
+                  width="920"
+                />
+              </div>
+              <div className={styles.wrap_content_img}>
+                <div className={styles.date}>E-commerce tips • 19 January 2020</div>
+                <div className={styles.des}>
+                  Tips and observations on remote working from a remote company.
+                  (Hint: It’s us!)
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <div className={styles.wrap_img_blog + " " + styles.add}>
           <div className={styles.image_blog}>
             <Image
               className={styles.img_blog}
@@ -67,6 +135,7 @@ export default function ContentBlog() {
             </div>
           </div>
         </div>
+      </div>
         <div className={styles.block_casestudy}>
           <div className={styles.container_block_casestudy}>
             <div className={styles.title_block_casestudy}>
@@ -114,7 +183,6 @@ export default function ContentBlog() {
               See our case studies
               <FontAwesomeIcon icon={faCaretRight} style={{ marginLeft: 10 }}></FontAwesomeIcon>
             </div>
-          </div>
         </div>
       </div>
     </Layout>

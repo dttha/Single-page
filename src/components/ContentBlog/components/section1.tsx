@@ -55,15 +55,18 @@ export default function Section1({ posts }: { posts: any }) {
     console.log(key);
   }
 
-  function handleChange(page: any) {
-    current: page
-    min: (page - 1) * pageSize
-    limit: page * pageSize
+  function handleChange(page: number) {
+    setPagination({
+      current: page,
+      min: (page - 1) * pageSize,
+      limit: page * pageSize,
+      totalPage: posts.length / pageSize
+    })
   }
 
-  useEffect(() => {
-    setPagination(pagination)
-  }, [filter])
+  // useEffect(() => {
+  //   setPagination(pagination)
+  // }, [filter])
 
   return (
     <div className={styles.wrap_tabs}>
