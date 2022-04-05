@@ -6,6 +6,7 @@ import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 import { useRef } from 'react';
 import nextBtn from '../../../../public/nextBtn.png';
 import prevBtn from '../../../../public/prevBtn.png';
+import Link from 'next/link';
 export default function Slider() {
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
@@ -47,80 +48,112 @@ export default function Slider() {
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className={styles.swiper_slide_wrap}>
                 <div className={styles.swiper_slide_img}>
-                  <Image src={img1} alt="" width="100"></Image>
+                  <Link href="#">
+                    <Image src={img1} alt="" width="100"></Image>
+                  </Link>
                 </div>
                 <div className={styles.swiper_slide_content}>
-                  How Createur Made Waves for Client Sunny Life
+                  <Link href="#">
+                    How Createur Made Waves for Client Sunny Life
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>

@@ -15,6 +15,12 @@
   width: 10%;
 }
 
+.wrap_first_1 {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
 .number {
   font-family: "Source Serif Pro";
   font-weight: 600;
@@ -37,6 +43,11 @@
   display: inline;
   margin-left: 156px;
 }
+.wrap_text_1 {
+  width: 55%;
+  display: inline;
+  margin-left: 156px;
+}
 
 .title {
   font-family: "Manrope";
@@ -47,6 +58,12 @@
 }
 
 .wrap_text span {
+  color: #15bcaf;
+  font-size: 60px;
+  font-family: "Source Serif Pro";
+  display: inline-block !important;
+}
+.wrap_text_1 span {
   color: #15bcaf;
   font-size: 60px;
   font-family: "Source Serif Pro";
@@ -196,7 +213,7 @@
   margin-left: calc(100% - 880px);
   animation: move_center_top 2s;
 }
-
+/*
 @keyframes move_center_top {
   0% {
     opacity: 0;
@@ -215,9 +232,9 @@
     margin-top: -236px;
     margin-left: calc(100% - 880px);
   }
-}
+} */
 
-@keyframes move_center_top_1700px {
+/* @keyframes move_center_top_1700px {
   0% {
     opacity: 0;
     margin-left: 59%;
@@ -234,9 +251,9 @@
     margin-left: 65%;
     margin-top: -185px;
   }
-}
+} */
 
-@keyframes move_center_top_730px {
+/* @keyframes move_center_top_730px {
   0% {
     opacity: 0;
     margin-left: 50%;
@@ -253,9 +270,9 @@
     margin-left: 53%;
     margin-top: -185px;
   }
-}
+} */
 
-@keyframes move_center_top_552px {
+/* @keyframes move_center_top_552px {
   0% {
     opacity: 0;
     margin-left: 50%;
@@ -272,7 +289,7 @@
     margin-left: 53%;
     margin-top: -135px;
   }
-}
+} */
 
 .bitmap {
   width: 288px;
@@ -283,7 +300,7 @@
   animation: move_right_top 2s;
 }
 
-@keyframes move_right_top {
+/* @keyframes move_right_top {
   0% {
     opacity: 0;
     margin-left: calc(100% - 825px);
@@ -301,7 +318,7 @@
     margin-left: calc(100% - 530px);
     margin-top: -200px;
   }
-}
+} */
 
 .bitmap2 {
   width: 265px;
@@ -313,7 +330,7 @@
   animation: move_center_left 2s;
 }
 
-@keyframes move_center_left {
+/* @keyframes move_center_left {
   from {
     opacity: 0;
     margin-left: 32%;
@@ -368,7 +385,7 @@
     margin-left: 1%;
     margin-top: -85px;
   }
-}
+} */
 
 .group_img {
   margin: 215px auto 0;
@@ -450,11 +467,24 @@
   position: absolute;
 }
 
+.img_pc .img_people{
+  width: 100%;
+  transition: 0.5s;
+}
+
+.wrap_image:hover .img_people{
+ transform: scale(1.1);
+}
+
 @media (max-width: 1700px) {
   .wrap_content_title {
     margin-left: 10%;
   }
   .wrap_text {
+    width: 75%;
+    margin-left: 80px;
+  }
+  .wrap_text_1 {
     width: 75%;
     margin-left: 80px;
   }
@@ -501,6 +531,11 @@
   }
 
   .wrap_text {
+    width: 100%;
+    display: inline;
+    margin-left: 100px;
+  }
+  .wrap_text_1 {
     width: 100%;
     display: inline;
     margin-left: 100px;
@@ -589,6 +624,9 @@
     max-height: 100%;
   }
   .wrap_first {
+    display: none;
+  }
+  .wrap_first_1 {
     display: none;
   }
   .wrap_content_title {
@@ -733,6 +771,10 @@
     padding-top: 80px;
   }
   .wrap_text {
+    width: 100%;
+    display: inline;
+  }
+  .wrap_text_1 {
     width: 100%;
     display: inline;
   }

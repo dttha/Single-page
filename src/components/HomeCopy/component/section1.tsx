@@ -43,13 +43,49 @@ export default function Section1() {
       direction: 'alternate',
       loop: true
     });
-    // anime({
-    //   targets: `.${styles["wrap_first"]}`,
-    //   translateX: [100, 250], // from 100 to 250
-    //   delay: 500,
-    //   direction: 'alternate',
-    //   loop: false
-    // });
+    anime({
+      targets: `.${styles["wrap_first"]}`,
+      translateX: [-100, 0],
+      delay: 500,
+      direction: 'alternate',
+      loop: true,
+      opacity: [0, 1],
+      easing: 'easeInOutQuad',
+    });
+    anime({
+      targets: `.${styles["wrap_text"]}`,
+      translateX: [200, 0],
+      delay: 500,
+      direction: 'alternate',
+      loop: true,
+      opacity: [0, 1],
+      easing: 'easeInOutQuad',
+    });
+    anime({
+      targets: `.${styles["wrap_first_1"]}`,
+      translateX: [100, 0], // from 100 to 250
+      delay: 500,
+      direction: 'alternate',
+      loop: true,
+      opacity: [0, 1],
+      easing: 'spring(1, 80, 10, 0)',
+    });
+    anime({
+      targets: `.${styles["wrap_text_1"]}`,
+      translateX: [-100, 0],
+      delay: 500,
+      direction: 'alternate',
+      loop: true,
+      opacity: [0, 1],
+      easing: 'spring(1, 80, 10, 0)',
+    });
+    anime({
+      targets: `.${styles["powerful"]}`,
+      translateX: 250,
+      direction: 'alternate',
+      loop: true,
+      easing: 'steps(5)'
+    });
   }, [])
   return (
     <div className={styles.wrap_section}>
@@ -71,12 +107,30 @@ export default function Section1() {
           </div>
         </div>
       </div>
+      <div className={styles.wrap_content_title}>
+        <div className={styles.wrap_first_1}>
+          <div className={styles.number}>
+            #1
+          </div>
+          <div className={styles.text}>
+            Intuitive & educational eCommerce
+          </div>
+        </div>
+        <div className={styles.wrap_text_1}>
+          <div className={styles.title}>
+            The first&nbsp;<span>“all in one”&nbsp;</span>intuitive and educational eCommerce experience
+          </div>
+          <div className={styles.description}>
+            Why efficiency and user-friendly can’t get along? Build your pages in confidence with the most optimized experience and informative instructions along the way that ensures success for even a first-time & non-technical eCommerce store owner.
+          </div>
+        </div>
+      </div>
       <div
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
         className={styles.wrap_image}>
         <div className={styles.img_pc}>
-          <Image src={img} alt="people working image" width="1454" height="710" />
+          <Image className={styles.img_people} src={img} alt="people working image" width="1454" height="710" />
         </div>
         <div className={styles.img_mobile}>
           <Image src={img5} alt="people working image" width="326" height="506" objectFit="cover" objectPosition="top" />

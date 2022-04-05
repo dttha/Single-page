@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from 'react'
 import SectionHome from '../src/components/Content/components/Section'
+import ContextFooter from '../src/components/Footer/components/footer'
 
 const Home: NextPage = () => {
   const [activeBtnTop, setActiveBtnTop] = useState(false)
@@ -40,6 +41,7 @@ const Home: NextPage = () => {
       {/* <Content /> */}
       <SectionHome />
       <Footer />
+      <ContextFooter></ContextFooter>
     </div>
   )
 }

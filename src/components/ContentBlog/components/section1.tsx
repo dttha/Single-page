@@ -6,6 +6,9 @@ import Link from 'next/link';
 import styles from '../contentBlog.module.css'
 import SwipeableViews from "react-swipeable-views";
 import { useEffect, useState } from 'react';
+import { IPost } from '../../../model';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 export async function getStaticProps() {
@@ -34,39 +37,23 @@ export async function getStaticProps() {
 }
 
 
-export default function Section1({ posts }: { posts: any }) {
+export default function Section1({ posts }: { posts: IPost[] }) {
+  const [page, setPage] = useState(1)
+  const [limit, setLimit] = useState(5)
+  const [currentPosts, setCurrentPosts] = useState<IPost[]>([])
   const { TabPane } = Tabs;
-  const pageSize = 15;
-  const [pagination, setPagination] = useState({
-    current: 1,
-    min: 0,
-    limit: 0,
-    totalPage: 0
-  })
 
-  const [filter, setFilter] = useState({
-    // page: 1,
-    min: 0,
-    limit: pageSize,
-    totalPage: posts.length / pageSize
-  })
+  useEffect(() => {
+    setCurrentPosts(posts.slice((page - 1) * limit, page * limit));
+  }, [page, limit, posts])
 
   function callback(key: any) {
     console.log(key);
   }
 
   function handleChange(page: number) {
-    setPagination({
-      current: page,
-      min: (page - 1) * pageSize,
-      limit: page * pageSize,
-      totalPage: posts.length / pageSize
-    })
+    setPage(page);
   }
-
-  // useEffect(() => {
-  //   setPagination(pagination)
-  // }, [filter])
 
   return (
     <div className={styles.wrap_tabs}>
@@ -75,9 +62,9 @@ export default function Section1({ posts }: { posts: any }) {
           <div className={styles.section1}>
             <div className={styles.container_blog_section}>
               <Row gutter={[25, 25]}>
-                {posts.map((item: any, index: any) => {
+                {currentPosts.map((item, index) => {
                   return (
-                    <Col key={index} span={8}>
+                    <Col key={index} xs={{ span: 24 }} sm={{ span: 12 }} lg={{ span: 8 }} >
                       <div className={styles.block_post}>
                         <div className={styles.block_post_img}>
                           <Image className={styles.img_blog} alt='post-1' src={image1} />
@@ -95,6 +82,24 @@ export default function Section1({ posts }: { posts: any }) {
               </Row>
             </div>
           </div>
+          <div className={styles.tab_line}></div>
+          <div style={{ paddingTop: "18px", paddingBottom: "75px" }}>
+            <Pagination
+              pageSize={limit}
+              current={page}
+              onChange={handleChange}
+              total={posts.length}
+              itemRender={(page, type) => {
+                if (type === "next") {
+                  return <FontAwesomeIcon style={{ color: "#808080" }} icon={faArrowRight}></FontAwesomeIcon>;
+                }
+                if (type === "prev") {
+                  return <FontAwesomeIcon style={{ color: "#808080" }} icon={faArrowLeft}></FontAwesomeIcon>;
+                }
+                else return page
+              }}
+            />
+          </div>
         </TabPane>
         <TabPane tab="E-commerce tips" key="2">
           Content of Tab Pane 2
@@ -106,16 +111,7 @@ export default function Section1({ posts }: { posts: any }) {
           Content of Tab Pane 4
         </TabPane>
       </Tabs>
-      <div className={styles.tab_line}></div>
-      <div style={{ paddingTop: "18px", paddingBottom: "75px" }}>
-        <Pagination
-          // pageSize={itemsPerPage}
-          // current={}
-          onChange={handleChange}
-          defaultCurrent={1}
-          total={posts.length}
-        />
-      </div>
+
     </div>
   )
 }

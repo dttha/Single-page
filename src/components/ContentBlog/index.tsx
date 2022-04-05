@@ -7,12 +7,14 @@ import image4 from '../../../public/unsplash_nNMBa7Y1Ymk.png'
 import image5 from '../../../public/unsplash_gMsnXqILjp4.png'
 import image6 from '../../../public/unsplash_K_VeavYEfdA.png'
 import image7 from '../../../public/unsplash_qCi_MzVODoU.png'
+import image8 from "../../../public/swiper1.png"
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from "./contentBlog.module.css";
 import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
+import Link from "next/link";
 
 export default function ContentBlog() {
   return (
@@ -30,18 +32,32 @@ export default function ContentBlog() {
           <SwiperSlide>
             <div className={styles.wrap_img_blog}>
               <div className={styles.image_blog}>
+                <Link href="#">
                 <Image
                   className={styles.img_blog}
                   alt="image-blog-1"
                   src={image1}
                   width="920"
                 />
+                </Link>
+              </div>
+              <div className={styles.image_blog_mobile}>
+                <Link href="#">
+                  <Image
+                    className={styles.img_blog}
+                    alt="image-blog-1"
+                    src={image8}
+                    width="336"
+                  />
+                </Link>
               </div>
               <div className={styles.wrap_content_img}>
                 <div className={styles.date}>E-commerce tips • 19 January 2020</div>
                 <div className={styles.des}>
+                  <Link href="#">
                   Tips and observations on remote working from a remote company.
                   (Hint: It’s us!)
+                  </Link>
                 </div>
               </div>
             </div>
@@ -49,18 +65,32 @@ export default function ContentBlog() {
           <SwiperSlide>
             <div className={styles.wrap_img_blog}>
               <div className={styles.image_blog}>
+                <Link href="#">
                 <Image
                   className={styles.img_blog}
                   alt="image-blog-1"
                   src={image1}
                   width="920"
                 />
+                </Link>
+              </div>
+              <div className={styles.image_blog_mobile}>
+                <Link href="#">
+                  <Image
+                    className={styles.img_blog}
+                    alt="image-blog-1"
+                    src={image8}
+                    width="336"
+                  />
+                </Link>
               </div>
               <div className={styles.wrap_content_img}>
                 <div className={styles.date}>E-commerce tips • 19 January 2020</div>
                 <div className={styles.des}>
+                  <Link href="#">
                   Tips and observations on remote working from a remote company.
                   (Hint: It’s us!)
+                  </Link>
                 </div>
               </div>
             </div>
@@ -68,37 +98,69 @@ export default function ContentBlog() {
           <SwiperSlide>
             <div className={styles.wrap_img_blog}>
               <div className={styles.image_blog}>
+                <Link href="#">
                 <Image
                   className={styles.img_blog}
                   alt="image-blog-1"
                   src={image1}
                   width="920"
                 />
+                </Link>
+              </div>
+              <div className={styles.image_blog_mobile}>
+                <Link href="#">
+                  <Image
+                    className={styles.img_blog}
+                    alt="image-blog-1"
+                    src={image8}
+                    width="336"
+                  />
+                </Link>
               </div>
               <div className={styles.wrap_content_img}>
                 <div className={styles.date}>E-commerce tips • 19 January 2020</div>
                 <div className={styles.des}>
+                  <Link href="#">
                   Tips and observations on remote working from a remote company.
                   (Hint: It’s us!)
+                  </Link>
                 </div>
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
         <div className={styles.wrap_img_blog + " " + styles.add}>
-          <div className={styles.image_blog}>
+          <div className={styles.image_blog + " " + styles.add_pc}>
+            <Link href="#">
             <Image
               className={styles.img_blog}
               alt="image-blog-1"
               src={image1}
               width="920"
+                objectFit="cover"
+                sizes="100vh"
             />
+            </Link>
+          </div>
+          <div className={styles.image_blog_mobile + " " + styles.add_mobile}>
+            <Link href="#">
+              <Image
+                className={styles.img_blog}
+                alt="image-blog-1"
+                src={image8}
+                width="336"
+                objectFit="cover"
+                sizes="100vh"
+              />
+            </Link>
           </div>
           <div className={styles.wrap_content_img}>
             <div className={styles.date}>E-commerce tips • 19 January 2020</div>
             <div className={styles.des}>
+              <Link href="#">
               Tips and observations on remote working from a remote company.
               (Hint: It’s us!)
+              </Link>
             </div>
           </div>
         </div>
@@ -106,31 +168,41 @@ export default function ContentBlog() {
         <div className={styles.wrap_img_column}>
           <div className={styles.wrap_img_blog}>
             <div className={styles.image_blog}>
+              <Link href="#">
               <Image
                 className={styles.img_blog}
                 alt="image-blog-1"
                 src={image2}
                 width="445"
+                  layout="fill"
               />
+              </Link>
             </div>
             <div className={styles.wrap_content_img}>
               <div className={styles.des}>
+                <Link href="#">
                 What are product experience insights? (and why every product team needs them)
+                </Link>
               </div>
             </div>
           </div>
-          <div className={styles.wrap_img_blog} style={{ marginTop: "20px" }}>
+          <div className={styles.wrap_img_blog} style={{ marginTop: 20 }}>
             <div className={styles.image_blog}>
+              <Link href="#">
               <Image
                 className={styles.img_blog}
                 alt="image-blog-1"
                 src={image3}
                 width="445"
+                  layout="fill"
               />
+              </Link>
             </div>
             <div className={styles.wrap_content_img}>
               <div className={styles.des}>
+                <Link href="#">
                 How to build a brilliant product strategy: a guide for the best strategy
+                </Link>
               </div>
             </div>
           </div>
